@@ -1,0 +1,194 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+/*
+Author:   Venise TUTU.
+Title:    CSS Document
+*/
+
+
+$primaryfont1: 'Open Sans', sans-serif;
+$primaryfont2: 'Roboto', sans-serif;
+
+$displaycolor: #696969;
+$blueLink: #009eea; $blueLink-hover: #0086c6;
+
+.abtbracer{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sdggwhiteBoard{
+  width: 100%;
+  background-color: #fff;
+  font-family: $primaryfont1;
+  margin: 0px auto 0 auto;
+  padding:  60px 0 30px 0;
+  text-align: justify;
+  &:after{
+    display:table;
+    content: '';
+    clear:both;
+  }
+}
+.abtwhiteBoardHead{
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(233, 232, 232);
+  color:  rgb(73, 73, 73);
+  padding: 20px 8px;
+  font-family: $primaryfont1;
+}
+.btpreAmble{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color:  rgb(73, 73, 73);
+}
+.abtGoalsWrapper{
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+.flip-card { 
+  height: 380px;
+  cursor: pointer;
+  perspective: 1000px;
+  float: left;
+  margin: 0 20px 20px 0;
+  width: calc((100% - 20px * 2) / 3);
+  
+  &:last-child {
+    margin-right: 0;
+    float: left;
+  }
+  &:nth-child(3n+3) {
+    margin-right: 0;
+    float: right;
+  }  
+}
+.flip-card-inner{
+  position: relative;
+  width:100%;
+  height: 100%;
+  transition: transform 0.1s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner{
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  backface-visibility: hidden;
+}
+
+  .frontImgbt{
+    height: 320px;
+    width: 100%;
+
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+.frontTitlebt{
+    font-size: 18px;
+    height: 50px;
+    font-weight: bold;
+    color: rgb(68, 66, 66);
+    margin-top: 10px;
+  }
+
+
+.backContnt{
+  width: 90%;
+  margin: 0 auto 0 auto;
+  margin-top: 100px;
+
+  h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  h4{
+   font-size: 14px;
+   color: #fff;
+  }
+  div{
+    margin: 20px auto 0 auto;
+    width: 230px;
+    padding: 8px 5px;
+    text-align: center;
+    background-color: #fff;
+    color: #222121;
+  
+  &:hover{
+    background-color: #000;
+    color: #fff;
+  }
+  }
+}
+
+@media (min-width: 750px) and (max-width:1100px) {
+  
+  .flip-card { 
+    height: 290px;
+  }
+
+    .frontImgbt{
+      height: 230px;
+      width: 100%;
+    }
+
+
+.backContnt{
+  margin-top: 60px;
+
+  h4{
+    font-size: 12px;
+    font-weight: normal;
+    color: #fff;
+   }
+
+  div{
+    width: 90%;
+    font-size: 12px;
+    
+  }
+}
+
+}
+
+
+@media (min-width: 200px) and (max-width:750px) {
+  
+  .sdggwhiteBoard{
+    padding:  40px 0 30px 0;
+  }
+  .flip-card { 
+    width: 100%;
+    height: 390px;
+  }
+
+  .backContnt{
+    margin-top: 80px;
+  
+    h4{
+      font-size: 12px;
+      font-weight: normal;
+      color: #fff;
+     }
+  
+    div{
+      width: 90%;
+      font-size: 12px;
+      
+    }
+  }
+
+}

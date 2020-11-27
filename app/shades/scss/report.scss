@@ -1,0 +1,533 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+/*
+Author:   Venise TUTU.
+Title:    CSS Document
+*/
+
+$primaryfont: 'Jura', sans-serif;
+$primaryfont2: 'Ubuntu', sans-serif;
+$primaryfont3: 'Open Sans', sans-serif;
+$exp1: 'Russo One', sans-serif;
+$exp2: 'Barlow', sans-serif;
+$exp3: 'Alegreya Sans', sans-serif;
+$exp4: 'Palanquin', sans-serif;
+
+
+
+$subwhite: #e6e6e6;
+$subwhite2: #c5c5c5;
+$grey: #f8f8f8;
+$blueLink: #009eea; $blueLink-hover: #0086c6;
+
+$Achievers: #00b300;
+$Toprankers: #ffff06;
+$Highliners: #ff860d;
+$Beginners:red;
+
+.Bracerr{
+   width: 90%;
+   margin: 0 auto;
+   position: relative;
+}
+.Bracerr:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+.TitleMcon{
+   width: 100%;
+}
+.TitleMcon:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+.TitleContt{
+   float:left;
+   width: 50%;
+   padding: 5px 0;
+   margin: 40px 0 20px 0;
+   background-color: #fff;
+   border: 1px solid #d6d6d6;
+   font-size: 20px;
+   text-align: center;
+   color: #494949;
+   font-weight: bold;
+   font-family: $exp3;
+}
+.methodBracer{
+   width: 90%;
+   padding: 5px 0;
+   background-color: #fff;
+   border: 1px solid #d6d6d6;
+   font-size: 20px;
+   text-align: center;
+   color: #494949;
+   font-weight: bold;
+   font-family: $exp3;
+   margin: 0 auto 10px auto;
+   
+}
+.dataCubeLeft{
+   float: left;
+   background-color: #fff;
+   border: 1px solid #d6d6d6;
+   padding: 20px 15px;
+   width: 49%;
+   height: 570px;
+   margin-bottom: 30px;
+}
+.dataCubeRight{
+   @extend .dataCubeLeft;
+   float: right;
+    overflow:hidden;
+   overflow-y: scroll;
+}
+.methodologyCon{
+   background-color: #fff;
+   border: 1px solid #d6d6d6;
+   padding: 20px 15px;
+   width: 100%;
+   margin-bottom: 30px;
+   color: #585858;
+   font-family: $exp4;
+   
+   h4{
+      font-size: 16px;
+      font-weight: bold;
+      margin: 20px 0 10px 0;
+   }
+   h5{
+      font-weight: bold;
+      font-size: 14px;
+      margin: 15px 0;
+      font-style: italic;
+   }
+   p{
+      font-size: 16px;
+      line-height: 25px;
+      margin-bottom: 7px;
+      
+   }
+   ol{
+    padding-left: 15px;
+    margin-bottom: 10px;
+      li{
+        list-style-type: numeric;
+        margin-bottom: 4px;
+        font-size: 16px;
+      }
+   }
+}
+.dataCubeTitle{
+   font-size: 16px;
+   font-family: $exp3;
+   font-weight: bold;
+   color: #5c5c5c;
+   
+   .RankTit{
+      float: left;
+   }
+   .RankLegend{
+     float: right;
+     text-align: right;
+   .shrtDiv{
+      float: right;
+      width: 50px;
+      
+   }
+   .shrtScr{
+      clear:both;
+     text-align: right;
+     
+   }
+}
+}
+.dataCubeTitle:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+.dataCubeLinerper{
+   width: 100%;
+}
+.table{
+   margin-top: 20px;
+   width: 100%;
+   
+   tbody{
+      width: 100%;
+     border:none;
+   }
+   td{
+      text-align:left;
+      border-bottom: 1px dotted #333;
+      font-family: $exp2;
+   }
+}
+.LayerCon{
+   width: 90%;
+   margin: 20px auto 0 auto;
+   position:relative;
+   
+}
+.stateAbrev{
+   float: left;
+   width: 9%;
+   text-align: right;
+   font-size: 11px;
+   font-family: $primaryfont3;
+   padding-right: 5px;
+   margin-top: -2px;
+   font-weight: bold;
+   color: #5f5f5f;
+   
+}
+
+.regionalAbrev{
+  @extend .stateAbrev;
+  width: 15%;
+  padding-right: 10px;
+}
+
+.ribSupercon{
+   float: left;
+   width: 91%;
+   
+}
+.regSupercon{
+   @extend .ribSupercon;
+   width: 80%;
+   
+}
+
+.ribbonCon{
+   width:100%;
+   margin-bottom: 3px;
+   
+   .shwp{
+   width: 25px;
+   float:left;
+   text-align: right;
+   margin-top: -2px;
+   font-size: 10px;
+   font-weight: bold;
+   font-family: $primaryfont3;
+   }
+}
+
+.regbonCon{
+    @extend .ribbonCon;
+   
+   .shwp{
+   width: 20px;
+   padding-left: 3px;
+   
+   }
+}
+
+.scaler{
+   width: 100%;
+   
+  // border: 1px solid #333;
+   li{
+      float:left;
+      text-align: right;
+      font-family: $exp2;
+      width: 20%;
+      font-size: 14px;
+      color: #595959;
+      font-weight: bold;
+     
+   }
+}
+.scaler:after, .ribbonCon:after, .LayerCon:after, .RegionBar:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+.SW:after,.NE:after,.NW:after,.SE:after,.SS:after,.NC:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+.LGS:after,.EDO:after,.BEU:after,.ENU:after,.AIB:after,.ABJ:after,.OND:after,.EKT:after,.OYO:after,.KAT:after,.BAU:after,.OSU:after,.NGR:after,.ABI:after,.ADA:after,.ANB:after,.BYL:after,.RIV:after,.CRV:after,.DEL:after,.EBN:after,.GOM:after,.IMO:after,.JIG:after,.KEB:after,.KOG:after,.KWR:after,.NAS:after,.OGN:after,.PLT:after,.SKT:after,.TRB:after,.YBE:after,.ZFR:after,.BRN:after,.KAD:after,.KAN:after{
+  display: table;
+  clear: both;
+  content: ''; 
+   
+}
+
+.ribbon{
+   float:left;
+   padding:6px 0;
+   cursor: pointer;
+}
+.LGS,.EDO,.BEU,.ENU,.AIB,.ABJ,.OND,.EKT,.OYO,.KAT,.BAU,.OSU,.NGR,.ABI,.ADA,.ANB,.BYL,.RIV,.CRV,.DEL,.EBN,.GOM,.IMO,.JIG,.KEB,.KOG,.KWR,.NAS,.OGN,.PLT,.SKT,.TRB,.YBE,.ZFR,.BRN,.KAD,.KAN{
+  position: relative; 
+   width: 100%;
+   
+}
+.SW,.NE,.NW,.SE,.SS,.NC{
+   position: relative;
+   width: 100%;
+   margin-bottom: 60px;
+   
+}
+
+.greenn{
+   background-color: #008000;
+   cursor: pointer;
+}
+.greenn:hover{
+   background-color: #009d00;
+}
+.yelloww{
+   background-color: #ffff06;
+   cursor: pointer;
+}
+.yelloww:hover{
+   background-color: #ffff40;
+}
+.redd{
+   cursor: pointer;
+   background-color: red;
+}
+.redd:hover{
+   background-color: #ff3737;
+}
+.orangee{
+   cursor: pointer;
+   background-color: #fa8c1f;
+}
+.orangee:hover{
+   background-color: #fb9b3c;
+}
+.dataCubeRank{
+   @extend .dataCubeLeft;
+   height: 750px;
+   position: relative;
+    width: 65%;
+}
+.dataCubeRegional{
+   @extend .dataCubeRight;
+   height: 750px;
+   width: 33%;
+   overflow: hidden;
+}
+.divider{
+   position: absolute;
+   z-index: 600;
+   top: 0px;
+   height: 620px;
+   
+   background: transparent;
+}
+.mapCont{
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   cursor: pan;
+   position: relative;
+   
+   img{
+   width: 100%;
+   height: 100%;
+   }
+}
+.infoCardcont{
+   width: 150px;
+   background-color: #fff;
+   position: absolute;
+   z-index: 400;
+   
+}
+.infoCard{
+   width: 100%;
+   padding: 10px;
+   box-shadow: 0px 1px 5px #d6d6d6;
+   color: #676767;
+   text-align: center;
+   line-height: 25px;
+   border: 1px solid #9e9e9e;
+   
+   
+   p{
+      font-size: 16px;
+   }
+   div{
+      font-size: 25px;
+      font-weight: bold;
+   }
+}
+.legendCard{
+   width: 120px;
+   background-color: #fff;
+   position: absolute;
+   bottom:5px;
+   right:5px;
+   box-shadow: 0px 1px 5px #d6d6d6;
+   padding: 5px 10px;
+   
+   
+   .angleUp{
+      text-align: right;
+      font-size: 30px;
+      margin-right: -15px;
+      line-height: 10px;
+      cursor: pointer;
+   }
+   .angleDown{
+      text-align: right;
+      font-size: 30px;
+      cursor: pointer;
+      line-height: 10px;
+      margin-right: -15px;
+   }
+   
+   .achvBox{
+      width: 15px;
+      height: 15px;
+      padding: 3px;
+      background-color: $Achievers;
+      margin-top: 1px;
+   }
+   .trankerBox{
+      @extend .achvBox;
+      background-color: $Toprankers;
+   }
+   .highLinerBox{
+      @extend .achvBox;
+      background-color: $Highliners;
+   }
+   .bignBox{
+      @extend .achvBox;
+      background-color: $Beginners;
+   }
+   
+}
+
+.legendLine{
+   width: 100%;
+   margin-bottom: 5px;
+   
+   div{
+      float: left;
+      
+   }
+   .legendText{
+      font-size: 12px;
+      padding-left: 10px;
+   }
+}
+.legendLine:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+.toolTip{
+   position: absolute;
+   top:0;
+   z-index: 800;
+   width: 70px;
+   padding: 5px 0;
+   font-size: 10px;
+   border: 1px solid #ffb7b7;
+   background-color: #fff;
+   text-align: center;
+}
+.selecTContry{
+   width: 400px;
+   border: 3px solid #d7d7d7;
+   padding:3px;
+   margin: 40px 0 0 0;
+   height: 40px;
+   font-size: 18px;
+   font-family: $primaryfont3;
+}
+.cuspicky{
+   color:#6b6b6b;
+   background-color: #fff;
+}
+.emptyDat{
+  height:100%;
+  width:100%;
+  position:relative;
+}
+.noDataRep{
+   
+   position: absolute;
+   width: 100%;
+   height: 100%;  
+   text-align: center;
+   padding: 100px 0;
+   font-size: 40px;
+   color: #535353;
+   
+   font-family: 'Alegreya Sans', sans-serif;
+  
+}
+
+
+
+@media (min-width: 651px) and (max-width:750px) {
+
+.dataCubeLeft{
+   width: 100%;
+   height: 550px;
+ 
+}
+.dataCubeRank{
+  height: 750px;
+   width: 100%;
+}
+.dataCubeRegional{
+   height: 530px;
+   width: 100%;
+   
+} 
+   
+}
+
+
+
+@media (min-width: 471px) and (max-width:650px) {
+.dataCubeLeft{
+   width: 100%;
+   height: 450px;
+   
+}
+.dataCubeRank{
+  height: 750px;
+   width: 100%;
+}
+.dataCubeRegional{
+   height: 530px;
+   width: 100%;
+   
+}
+   
+}
+
+@media (min-width: 200px) and (max-width:470px){
+   
+.dataCubeLeft{
+   width: 100%;
+   height: 400px;
+   
+}
+.dataCubeRank{
+  height: 750px;
+   width: 100%;
+}
+.dataCubeRegional{
+   height: 530px;
+   width: 100%;
+   
+}
+.selecTContry{
+   width: 100%;
+}
+
+}

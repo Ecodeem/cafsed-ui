@@ -1,0 +1,120 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+/*
+Author:   Venise TUTU.
+Title:    CSS Document
+*/
+
+
+$primaryfont1: 'Open Sans', sans-serif;
+$primaryfont2: 'Ubuntu', sans-serif;
+
+
+$subwhite: #e6e6e6;
+$subwhite2: #c5c5c5;
+$grey: #f8f8f8;
+$blueLink: #009eea; $blueLink-hover: #0086c6;
+
+
+.succesFull{
+  width: 400px;
+  margin: 50px auto 0 auto;
+  border: 1px solid #acacac;
+  background-color: #fff;
+  padding: 20px;
+  
+  p{
+    font-size: 18px;
+    color: #6e6e6e;
+    text-align: center;
+    font-weight: bold;
+    font-family: $primaryfont2;
+  }
+  div{
+    width: 200px;
+    margin: 30px auto 0 auto;
+    padding: 8px 10px;
+    color: #fff;
+    background-color: #fa3855;
+    text-align: center;
+    font-family: $primaryfont1;
+  }
+  div:hover{
+    background-color: #ff9191;
+   
+  }
+}
+.succesFull:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+
+.userHeadderWrapper{
+   width: 80%;
+   margin: 40px auto 0 auto;
+  
+
+
+    .userNav{
+      
+      li{
+       float: left;
+       padding-left: 1px;
+       font-size: 18px;
+       line-height: 10px;
+       color: #646464;
+       font-family: 'Jura', sans-serif;
+       cursor: pointer;
+       
+       &:hover  {
+           background-color: #e9e9e9;
+       } 
+     }
+     .Active{
+         background-color:#ebebeb;
+        padding: 15px 30px;
+        border-bottom: 3px solid #fa3855;
+        
+}
+     .Inactive{
+         
+        padding: 17px 30px;
+        
+        
+}
+     &:after{
+    clear: both;
+    display: table;
+    content:'';
+    
+   }
+ 
+      
+   }
+   
+}
+
+
+@media (min-width: 651px) and (max-width:850px) {
+
+}
+
+
+
+@media (min-width: 471px) and (max-width:650px) {
+
+
+   
+}
+
+@media (min-width: 200px) and (max-width:470px){
+
+.succesFull{
+  width: 90%;
+  margin: 50px auto 0 auto;
+  
+  
+}
+ 
+}

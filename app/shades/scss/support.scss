@@ -1,0 +1,730 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+/*
+Author:   Venise TUTU.
+Title:    CSS Document
+*/
+
+
+$primaryfont1: 'Open Sans', sans-serif;
+$primaryfont: 'Jura', sans-serif;
+
+
+$primarycolor: #ff8000;
+$displaycolor: #696969;
+$blueLink: #009eea; $blueLink-hover: #0086c6;
+
+.body{
+  
+}
+
+.donationStats{
+  float:right;
+  width: 400px;
+  margin-top: 20px;
+  color: #333;
+  font-family: $primaryfont;
+  
+  div{
+    float:right;
+    font-size: 11px;
+    
+    
+    span{
+      font-size: 10px;
+      color: #6e6e6e;
+    }
+  }
+}
+.donationStats:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.supportBracer{
+  width: 90%;
+  margin: 0 auto;
+}
+.suppageTitle{
+  font-family: $primaryfont1;
+  color: $displaycolor;
+  margin-top: 30px;
+  h3{
+    font-size: 30px;
+    font-weight: bold;
+    
+    
+  }
+  p{
+    padding-top: 20px;
+    font-size: 20px;
+    width: 600px;
+    
+  }
+  div{
+    width: 50px;
+    border: 2px solid #333;
+    margin-bottom: 20px;
+  }
+}
+
+.donorType{
+
+  margin-bottom: 20px;
+  
+  &:after{
+    display: table;
+    content: '';
+    clear:both;
+  }
+  
+ 
+  label{
+    float:left;
+    width: calc((100% - 10px * 2) / 2);
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+      float: right;
+    }
+     
+    .selected{
+      background-color: rgb(105, 15, 53);
+      color: #f3f3f3;
+    }
+  }
+
+  input{
+    display: none;
+  
+  &:checked +div{
+    background-color: rgb(105, 15, 53);
+    color: #f3f3f3;
+     }
+  }
+
+  div{
+    
+    width: 100%;
+    padding: 20px 8px;
+    margin-bottom: 10px;
+    background-color: rgb(224, 222, 223);
+    color: #747474;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #e8e8e8;
+    cursor: pointer;
+    font-weight:normal;
+    font-family: $primaryfont1;
+    
+    &:hover{
+      background-color: #008ed2;
+      color: #fff;
+    }
+}
+
+}
+
+.suppportCard{
+    
+    float: left;
+    margin-right: 20px;
+    width: calc((100% - 20px * 2) / 3);
+    cursor: pointer;
+    margin-bottom: 20px;
+    
+    
+    .topDiv{
+      width: 100%;
+      height: 250px;
+     
+      
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius:3px;
+      }
+      video{
+        width: 100%;
+        height: 100%;
+        border-radius:3px;
+        object-fit:fill;
+      }
+    }
+    .buttDiv{
+      width: 100%;
+      background-color: #fff;
+      color: #fff;
+      font-family: $primaryfont1;
+      padding: 30px;
+      
+      h3{
+        width:100%;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+    
+      
+      div{
+        width:100%;
+        font-size: 14px;
+        margin: 10px 0;
+        text-align: justify;
+       
+        
+      }
+      
+      section{
+        border-top: 1px solid #c0c0c0;
+        margin-top: 50px;
+        
+      div{
+          width: 100%;
+          border: 1px solid #fff;
+          text-align: center;
+          padding: 10px;
+          cursor: pointer;
+          margin-top: 20px;
+          border-radius: 3px;
+        }
+      div:hover{
+          border: 1px solid #e1e1e1;
+          color: #e8e8e8;
+        }  
+      
+      }
+    }
+
+}
+.suppportCard:last-child {
+  margin-right: 0;
+  float: left;
+}
+.suppportCard:nth-child(3n+3) {
+  
+  margin-right: 0;
+  float: left;
+}
+.suppportCard:hover{
+  box-shadow: 0px 1px 7px #bfbfbf;
+  
+}
+.supportPreamb{
+  width: 100%;
+  padding: 30px;
+  margin: 10px 0 30px 0;
+  border: 5px solid #cfcfcf;
+  font-family: $primaryfont1;
+  
+  p{
+    text-align:justify;
+  }
+}
+
+
+.wrapContry:after,.supportBracer:after{
+  display: table;
+  clear:both;
+  content:'';
+}
+.ListCountry{
+  position: relative;
+  padding: 40px 40px;
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: $primaryfont1;
+  z-index:300;
+  border-radius: 3px;
+}
+
+  
+.wrapContry{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.countryBox{
+  float:left;
+  width: 33.3333333%;
+  font-family: $primaryfont1;
+  
+  div{
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid #cfcfcf;
+    border-radius: 4px;
+    color: #737373;
+    font-size: 16px;
+    padding: 8px 5px;
+    cursor:pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: ease-out .3s;
+  }
+  div:hover{
+    transition: ease-in .3s;
+    transform: scale(1.04);
+    text-overflow: display;
+  }
+}
+.africaMap{
+  float:left;
+  width:60%;
+  height: 550px;
+  
+   
+}
+.sdgCubes{
+  float:right;
+  width:37%;
+  margin-bottom: 60px;
+  
+  ul{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  
+  li{
+    flex: 1 0 auto;
+    width: 100px;
+    height:100px;
+    cursor: pointer;
+    transition: ease-out .3s;
+    margin: 0 2px 2px 0;
+   
+  }
+  li:hover{
+    transition: ease-in .3s;
+    transform: scale(1.3);
+  }
+  img{
+    width:100%;
+    height:100%;
+  }
+}
+.svgAfMap{
+  width:100%;
+  height:100%;
+  border: 2px solid #e0e0e0;
+  padding: 10px;
+}
+.ListIndicators{
+  position: relative;
+ 
+  width: 60%;
+  height: 100%;
+  margin: 0 auto 0px auto;
+  background-color: #fff;
+  font-family: $primaryfont1;
+  z-index:400;
+  border-radius: 3px;
+  
+}
+.succesWrapper{
+  position: relative;
+ 
+  width: 60%;
+ 
+  margin: 0 auto 0px auto;
+  background-color: #fff;
+  font-family: $primaryfont1;
+  z-index:400;
+  border-radius: 3px;
+  
+}
+.wrapSucces{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 40px;
+  text-align: justify;
+
+  h3{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  p{
+    margin-bottom: 10px;
+  }
+  span{
+    font-weight: bold;
+    color: rgb(105, 43, 95);
+  }
+}
+.indicaHead{
+  width: 100%;
+  
+  
+}
+.indicaHead:after{
+  display:table;
+  content:'';
+  clear: both;
+}
+.wrapGoalIcon{
+  float:left;
+  width: 80px;
+  height:80px;
+  
+  img{
+    width:100%;
+    height:100%;
+    border: 2px solid #fff;
+  }
+}
+.wrapGoalTitle{
+  float:left;
+  margin: 20px 0 0 20px;
+  h3{
+    font-size: 25px;
+    color: #e9e9e9;
+    margin-bottom:5px;
+  }
+  p{
+    font-size: 20px;
+    color: #e9e9e9;
+  }
+}
+.targetFormWr{
+  height: 65%;
+}
+.takeinIndicators{
+  width: 90%;
+  height: 100%;
+  margin: 30px auto 0 auto;
+  overflow:auto;
+  
+  
+  input{
+    display: none;
+  
+  &:checked +div{
+    background-color: #3ED294;
+    color: #f3f3f3;
+     }
+  }
+  label{
+    width: 100%;
+  }
+  div{
+    
+    width: 100%;
+    padding: 5px 8px;
+    margin-bottom: 10px;
+    color: #747474;
+    font-size: 12px;
+    text-align: justify;
+    border: 2px solid #e8e8e8;
+    cursor: pointer;
+    font-weight:normal;
+    
+    &:hover{
+      background-color: #008ed2;
+      color: #fff;
+    }
+  }
+   
+}
+.lowerDivv{
+  position: absolute;
+  background-color:#fff;
+  bottom:0;
+  width: 100%;
+  padding: 10px 10px;
+  border-top: 1px solid #e2e2e2;
+  
+  input{
+    float:left;
+    width: 37%;
+    padding: 5px 8px;
+    border: 1px solid #e2e2e2;
+    font-size: 20px;
+    margin-right: 2%;
+    font-weight: bold;
+  }
+  
+  button{
+    float:left;
+    width: 60%;
+    background-color: #009d4f;
+    padding: 6px 8px;
+    color: #fff;
+    font-size: 20px;
+    border:none;
+    border-radius:0;
+    margin-left: 10px;
+  }
+  &:after{
+    content:'';
+    display: table;
+    clear:both;
+  }
+}
+.infoCardcontSup{
+   width: 150px;
+   background-color: #fff;
+   position: absolute;
+   z-index: 100;
+   
+}
+.infoCardSup{
+   width: 100%;
+   padding: 15px 10px;
+   box-shadow: 0px 1px 5px #d6d6d6;
+   color: #676767;
+   text-align: center;
+   line-height: 15px;
+   border: 1px solid #9e9e9e;
+   
+   
+   p{
+      font-size: 16px;
+      line-height: 20px;
+   }
+   div{
+      font-size: 25px;
+      font-weight: bold;
+   }
+}
+
+.wrapgoalIcons{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  &:after{
+    display:table;
+    content:'';
+    clear:both;
+  }
+}
+.innerWrapSup{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 20px;
+}
+.goalIconBox{
+  float:left;
+  width: 100px;
+  height:100px;
+  
+  img{
+    width:100%;
+    height:100%;
+    transition: ease-out .3s;
+    
+    &:hover{
+    transition: ease-in .3s;
+    transform: scale(1.3);
+    }
+  }
+}
+.ModallTitle{
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 10px;
+}
+.boxxTitle{
+  width: 100%;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #707070;
+  font-family: $primaryfont;
+  margin-bottom: 10px;
+  border: 2px solid #dddddd;
+}
+
+
+
+@media (min-width: 651px) and (max-width:750px) {
+
+.suppportCard{
+   width: calc((100% - 20px * 2) / 2);
+}
+.suppportCard:last-child {
+  margin-right: 0;
+  float: left;
+}
+.suppportCard:nth-child(3n+3) {
+  
+  margin-right: 20px;
+  float: left;
+}
+.ListCountry{
+ 
+  width: 80%;
+}
+.succesWrapper{
+  width: 80%;
+}
+.countryBox{
+  width: 50%; 
+  
+}
+
+.ListIndicators{
+  width: 70%;
+}
+   
+}
+
+
+
+@media (min-width: 471px) and (max-width:650px) {
+
+.suppageTitle{
+  margin-top: 30px;
+  
+  p{
+    padding-top: 20px;
+    font-size: 14px;
+    width: auto;
+    margin-bottom: 10px;
+  }
+}
+.suppportCard{
+    float: left;
+    margin-right: 0px;
+    width: 100%;
+}
+
+.africaMap{
+  width:100%;
+  margin-bottom: 20px;
+}
+.sdgCubes{
+ width:100%;
+  margin-bottom: 60px;
+}
+.ListCountry{
+ 
+  width: 80%;
+}
+.succesWrapper{
+  width: 80%;
+}
+.countryBox{
+  width: 100%; 
+  margin-bottom: 10px;
+}
+.ListIndicators{
+  width: 80%;
+}
+.donorType{
+
+  margin-bottom: 10px;
+  
+  div{
+    
+    width: 100%;
+    padding: 10px 8px;
+    font-size: 18px;
+}
+}
+
+   
+}
+
+@media (min-width: 200px) and (max-width:470px){
+
+.wrapGoalTitle{
+  float:left;
+  width: 50%;
+  margin: 20px 0 0 10px;
+  h3{
+    font-size: 14px;
+    color: #e9e9e9;
+    margin-bottom:5px;
+    font-weight:bold;
+  }
+  p{
+    font-size: 12px;
+    color: #e9e9e9;
+    line-height: 15px;
+  }
+}  
+.ListIndicators{
+  width: 90%;
+}
+  
+.africaMap{
+  width:100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.sdgCubes{
+ width:100%;
+  margin-bottom: 60px;
+  margin-top: 90px;
+} 
+
+.suppageTitle{
+  margin-top: 30px;
+  
+  p{
+    padding-top: 20px;
+    font-size: 14px;
+    width: auto;
+    margin-bottom: 10px;
+  }
+}
+.suppportCard{
+    float: left;
+    margin-right: 0px;
+    width: 100%;
+}
+.donationStats{
+  float:right;
+  width: 400px;
+  margin-top: 20px;
+  color: #333;
+  font-family: $primaryfont;
+  
+  div{
+    float:right;
+    font-size: 8px;
+    
+    
+    span{
+      font-size: 10px;
+      color: #6e6e6e;
+    }
+  }
+}
+.ListCountry{
+   width: 90%;
+}
+.succesWrapper{
+  width: 90%;
+}
+.countryBox{
+  width: 100%; 
+  margin-bottom: 10px;
+}
+
+.donorType{
+
+  margin-bottom: 10px;
+  
+  div{
+    
+    width: 100%;
+    padding: 10px 8px;
+    font-size: 13px;
+}
+
+}
+
+
+}
+
+

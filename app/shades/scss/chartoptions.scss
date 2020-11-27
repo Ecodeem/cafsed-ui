@@ -1,0 +1,201 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+/*
+Author:   Venise TUTU.
+Title:    CSS Document
+*/
+
+$primaryfont1: 'Open Sans', sans-serif;
+$primaryfont: 'Jura', sans-serif;
+
+
+$primarycolor: #ff8000;
+$displaycolor: #696969;
+$blueLink: #009eea; $blueLink-hover: #0086c6;
+
+.body{
+  
+}
+
+.chartMenu {
+  width: 100%;
+  background-color: #eee;
+  padding: 1px 10px; }
+
+.chartMarginn {
+  width: 85%;
+  margin: 3px auto 0 auto; }
+
+.chartMarginn:after {
+  display: table;
+  clear: both;
+  content: ''; }
+  
+.ChartMenuPicker {
+  margin: 8px 0 0 200px;
+  width: 180px;
+  float: left; }
+  .ChartMenuPicker li {
+    float: left;
+    margin-right: 20px; }
+    .ChartMenuPicker li img {
+      width: 25px;
+      height: 20px;
+      cursor: pointer; }
+
+.ChartMenuPicker:after {
+  display: table;
+  clear: both;
+  content: ''; }
+  
+.ChartTools {
+  float: right;
+  margin-top: 8px; }
+
+.ChartTools:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+  .ChartTools li {
+    float:left;
+    font-size: 25px;
+    cursor: pointer;
+}
+    
+.chartWrap {
+  position:relative;
+  margin: 0 auto 0 auto;
+  width: 80%;
+  height: 100%; }
+
+.stateForm{
+  margin-top: -12px;
+  padding-right:5px;
+}
+.stateinput{
+  font-family: $primaryfont1;
+  color:#585858;
+ width: 100px;
+  height: 30px;
+  font-size: 12px;
+  border:none;
+  border: 1px solid #d1d1d1;
+}
+.source {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 80%;
+  background-color: #f4f4f4;
+  z-index: 300;
+  font-size: 10px;
+  color: #8f8f8f;
+  text-align: right;
+  padding: 0 10px 0 0;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+
+  &:hover{
+   
+  overflow: visible;
+  white-space:normal;
+  }
+}
+
+
+@media (min-width: 751px) {
+  .chartMenu {
+    padding: 1px 0px; }
+
+  .chartMarginn {
+    width: 90%; }
+
+  .ChartMenuPicker {
+    margin: 8px 0 0 0px; }
+}
+
+@media (min-width: 651px) and (max-width: 750px) {
+  .chartMenu {
+    padding: 1px 0px; }
+
+  .chartMarginn {
+    width: 90%; }
+
+  .ChartMenuPicker {
+    margin: 8px 0 0 0px; }
+
+  .chartWrap {
+    width: 100%;
+    height: 100%; }
+
+  .lineWrap {
+    margin: 0 auto 0 auto;
+    width: 80%;
+    height: 200px; }
+
+  .barWrap {
+    margin: 0 auto 0 auto;
+    width: 80%;
+    height: 400px; } }
+@media (min-width: 471px) and (max-width: 650px) {
+  .chartMenu {
+    padding: 1px 0px; }
+
+  .chartMarginn {
+    width: 90%; }
+
+  .ChartMenuPicker {
+    margin: 8px 0 0 0px; }
+
+  .chartWrap {
+    width: 100%;
+    height: 100%; }
+
+  .lineWrap {
+    width: 100%;
+    height: 300px;
+    margin-left: 20px; }
+
+  .barWrap {
+    width: 100%;
+    height: 400px;
+    margin-left: 20px; } }
+@media (min-width: 200px) and (max-width: 470px) {
+  .chartMenu {
+    padding: 1px 0px; }
+
+  .chartMarginn {
+    width: 98%; }
+
+   
+  .ChartMenuPicker {
+  margin: 8px 0 0 -10px;
+  width: 100px;
+  float: left;
+  
+  }
+  .ChartMenuPicker li {
+    float: left;
+    margin-right: 5px; }
+    .ChartMenuPicker li img {
+      width: 25px;
+      height: 20px;
+      cursor: pointer; }
+
+  .chartWrap {
+    width: 100%;
+    height: 100%; }
+
+  .lineWrap {
+    width: 100%;
+    height: 300px;
+    margin-left: 20px; }
+
+  .barWrap {
+    width: 100%;
+    height: 400px;
+    margin-left: 20px; } }

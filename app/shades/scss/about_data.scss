@@ -1,0 +1,224 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+/*
+Author:   Venise TUTU.
+Title:    CSS Document
+*/
+
+
+$primaryfont1: 'Open Sans', sans-serif;
+$primaryfont2: 'Roboto', sans-serif;
+$exp3: 'Alegreya Sans', sans-serif;
+$primaryfont5: 'Montserrat', sans-serif;
+
+$displaycolor: #696969;
+$blueLink: #009eea; $blueLink-hover: #0086c6;
+
+.databracer{
+  width: 90%;
+  margin: 0 auto;
+  &:after{
+    display:table;
+    content: '';
+    clear:both;
+  }
+}
+
+.abtDatastrip1{
+  width: 100%;
+  padding: 20px 0;
+  background-color: #92c6df;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-family: $primaryfont5;
+}
+.abtDatastrip2{
+  width: 100%;
+  padding: 100px 0;
+  background-color: #225d79;
+  color: #fff;
+
+  h3{
+    font-size: 40px;
+    font-family: $primaryfont5;
+    text-align: center;
+  }
+}
+.datacollBracer{
+  width: 100%;
+  margin-top: 40px;
+  
+
+  &:after{
+    display:table;
+    content: '';
+    clear:both;
+  }
+
+}
+.datacollleft{
+  float:left;
+  width: 50%;
+  padding: 0 30px;
+  color: #fff;
+  
+  p{
+    font-size: 14px;
+    font-family: $exp3;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: justify;
+  }
+}
+.datacollRight{
+  float:left;
+  width: 50%;
+  padding: 0 30px;
+
+  p{
+    font-size: 14px;
+    font-family: $exp3;
+    margin-bottom: 10px; 
+    color: #fff;
+    text-align: justify;
+  }
+}
+
+.datastrip3{
+  position: relative;
+  width: 100%;
+  padding: 0px 0 100px 0;
+  background-color: #afae84;
+  color: #fff;
+}
+.datastrip3Box{
+  position: absolute;
+  left: 50%;
+  
+  width: 140px;
+  padding: 30px 0 30px 0;
+  margin: -60px 0 0 -70px;
+  text-align: center;
+  border-radius: 50% 50% 0 0;
+  background-color: #afae84;
+
+  span{
+    font-size: 60px;
+    color: #fff;
+  }
+
+}
+
+.datastrip3TItle{
+  padding: 80px 0 0 0;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  font-family: $primaryfont5;
+}
+.datastrip5TItle{
+ @extend .datastrip3TItle;
+ width: 40%;
+ margin: 0 auto;
+ font-size: 18px;
+}
+
+.datastrip3Contt{
+  width: 60%;
+  margin: 30px auto 0 auto;
+
+  p{
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: $exp3;
+    text-align: center
+  }
+}
+
+.datastrip4{
+  width: 100%;
+  padding: 0px 0 120px 0;
+  background-color: #225d79;
+  color: #fff;
+}
+.datastrip4Box{
+  @extend .datastrip3Box; 
+  background-color: #225d79;
+
+  
+
+}
+
+
+
+
+@media (min-width: 750px) and (max-width:1100px) {
+  
+ 
+}
+
+
+@media (min-width: 200px) and (max-width:750px) {
+  
+  .datastrip4{
+    width: 100%;
+    padding: 0px 0 100px 0; 
+  }
+  .datacollleft{
+    float:left;
+    width: 100%;
+    padding: 0 5px;
+    color: #fff;
+    
+    
+  }
+ 
+    
+  .datacollRight{
+    float:left;
+    padding: 0 5px;
+    width: 100%;
+  }
+  .abtDatastrip2{
+    width: 100%;
+    padding: 50px 0 100px 0;
+    
+    h3{
+      font-size: 20px;
+      font-family: $primaryfont5;
+      text-align: center;
+      line-height: 25px;
+    }
+  }
+  .databracer{
+    width: 95%;
+  }
+ 
+
+  .datastrip3Contt{
+    width: 90%;
+    margin: 30px auto 0 auto;
+  
+    p{
+      font-size: 15px;
+      margin-bottom: 15px;
+      color: #fff;
+      font-family: $exp3;
+      text-align: justify;
+    }
+  }
+
+  .datastrip3Box{
+    position: absolute;
+    
+    width: 140px;
+    padding: 30px 0 30px 0;
+   
+  }
+  .datastrip5TItle{
+    width: 80%;
+  }
+  
+}

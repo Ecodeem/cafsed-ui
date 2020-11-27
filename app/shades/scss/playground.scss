@@ -1,0 +1,245 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+/*
+Author:   Venise TUTU.
+Title:    CSS Document
+*/
+
+$primaryfont1: 'Open Sans', sans-serif;
+$exp1: 'Russo One', sans-serif;
+$exp2: 'Barlow', sans-serif;
+$exp3: 'Alegreya Sans', sans-serif;
+$exp4: 'Palanquin', sans-serif;
+
+
+$subwhite: #e6e6e6;
+$subwhite2: #c5c5c5;
+$grey: #f8f8f8;
+$blueLink: #009eea; $blueLink-hover: #0086c6;
+
+
+.locationBox{
+  width: 100%;
+  padding: 8px;
+  border:none;
+  border-bottom: 3px solid #585858;
+  text-align: center;
+  font-size: 18px;
+  font-family: $primaryfont1;
+  color: #4b4b4b;
+  cursor: pointer;
+  background-color: inherit;
+  
+  option{
+      padding: 5px 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border:none;
+    }
+    option:hover{
+      background-color: #868686;
+    }
+}
+
+.reportButt{
+   position: absolute;
+   top: 10px;
+   right: 40px;
+   border-radius: 3px;
+   font-family: $exp2;
+   padding: 5px 10px;
+   cursor: pointer;
+   background-color: #009be6;
+   color: #fff;
+   font-size: 14px;
+}
+.reportButt:hover{
+    background-color: #0097df;
+}
+.locationBoxCont{
+  margin: 0 auto;
+  width: 300px;
+  position: relative;
+  img{
+    position: absolute;
+    right: 0px;
+    width: 28px;
+    height: 39px;
+    margin-top: 3px;
+  }
+  select{
+    background-image:url(/app/shades/images/jlo.png);
+    background-repeat:no-repeat;
+    background-position:280px;
+    
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+  
+  }
+  
+}
+.locationBoxCont:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+.chartMenu{
+  width: 100%;
+  background-color: #eee;
+  padding: 1px 10px;
+}
+.chartMarginn{
+  width: 85%;
+  margin: 3px auto 0 auto;
+}
+.chartMarginn:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+
+.ChartTools{
+  float: right;
+  margin-top: 8px;
+  li{
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+.lineWrap{
+  margin: 0 auto 0 auto;
+  width: 80%;
+  height: 500px;
+}
+.barWrap{
+  margin: 0 auto 0 auto;
+  width: 80%;
+  height: 500px;
+}
+.chartWrap{
+  margin: 0 auto 0 auto;
+  width: 80%;
+  height: 100%;
+  
+}
+.noData{
+   
+   position: absolute;
+   top:0;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   padding: 100px 0;
+   z-index: 1;
+   font-size: 40px;
+   color: #535353;
+   background-color: #fff;
+   font-family: 'Alegreya Sans', sans-serif;
+  
+}
+
+
+@media (min-width: 751px)  {
+
+.chartMenu{
+  padding: 1px 0px;
+}
+.chartMarginn{
+  width: 90%;
+}
+
+   
+}
+
+
+@media (min-width: 651px) and (max-width:750px) {
+
+.chartMenu{
+  padding: 1px 0px;
+}
+.chartMarginn{
+  width: 90%;
+}
+
+.chartWrap{
+  width: 100%;
+  height: 100%;
+  
+}
+.lineWrap{
+   margin: 0 auto 0 auto;
+  width: 80%;
+  height: 200px;
+ 
+}
+.barWrap{
+   margin: 0 auto 0 auto;
+  width: 80%;
+  height: 400px;
+ 
+}
+
+
+   
+}
+
+
+
+@media (min-width: 471px) and (max-width:650px) {
+
+.chartMenu{
+  padding: 1px 0px;
+}
+.chartMarginn{
+  width: 90%;
+}
+
+.chartWrap{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.lineWrap{
+  width: 100%;
+  height: 300px;
+  margin-left: 20px;
+}
+.barWrap{
+  width: 100%;
+  height: 400px;
+  margin-left: 20px;
+}
+
+   
+}
+
+@media (min-width: 200px) and (max-width:470px){
+   
+.chartMenu{
+  padding: 1px 0px;
+}
+.chartMarginn{
+  width: 90%;
+}
+
+.chartWrap{
+  width: 100%;
+  height: 100%;
+  
+}
+.lineWrap{
+  width: 100%;
+  height: 300px;
+  margin-left: 20px;
+}
+.barWrap{
+  width: 100%;
+  height: 400px;
+  margin-left: 20px;
+}
+
+
+
+}

@@ -1,0 +1,429 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+/*
+Author:   Venise TUTU.
+Title:    CSS Document
+*/
+
+
+
+
+$primaryfont1: 'Open Sans', sans-serif;
+$exp3: 'Alegreya Sans', sans-serif;
+$blueLink: #009eea; $blueLink-hover: #0086c6;
+;
+$Achievers: #00b300;
+$Toprankers: #ffff06;
+$Highliners: #ff860d;
+$Beginners:red;
+
+
+
+.accTopStrip{
+  width: 100%;
+  background-color: #f0f0f0; 
+}
+.accbracerStrip{
+  position: relative;
+ width: 85%;
+   margin: 0 auto;
+  font-family: $primaryfont1;
+  padding-top: 30px;
+  
+  
+  
+}
+.LogOutBox{
+  position: absolute;
+  right: 0px;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+}
+.focusGoal{
+  float: right;
+  text-align: right;
+  font-size: 11px;
+  color: #858585;
+  width: 220px;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+.accbracerStrip:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+.addDes{
+  width: 80%;
+  font-size: 12px;
+  color: #6e6e6e;
+  span{
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+.settabStrip{
+  width: 100%;
+  background-color: #f0f0f0; 
+}
+.settabBracer{
+ width: 85%;
+   margin: 0 auto;
+  font-family: $primaryfont1;
+ 
+}
+.accLinksCon{
+  clear: both;
+ color: #4e4e4e;
+ padding-top: 20px;
+  
+  li{
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  li:hover{
+    color: #2d2d2d;
+  }
+}
+.accLinksCon:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+.accDownStrip{
+  width: 100%;
+  background-color: #fff;
+  padding: 30px 0;
+  height: auto;
+}
+.cavCont{
+  padding: 10px;
+  width: 85%;
+  margin: 0 auto 20px auto;
+  background-color: #f0f0f0;
+  border: 1px solid #bfbfbf;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: $primaryfont1;
+  color: #333;
+}
+.dataCard{
+  width: 85%;
+  margin: 0 auto 25px auto;
+  border-radius: 4px;
+  box-shadow: 0px 1px 5px #d6d6d6;
+  background-color: #f0f0f0;
+  padding: 10px;
+  font-family: $primaryfont1;
+
+  h4,p,h1, h2, h3, h5, h6{
+    text-align: left;
+    font-family: inherit;
+  }
+  
+  .upper{
+    width: 100%;
+  }
+  h2{
+    float:left;
+    font-size: 11px;
+    color: #00bb5e;
+    text-align: right;
+    margin: 10px 0 -10px 0;
+    font-weight: bold;
+  }
+  h5{
+    float:right;
+    font-size: 11px;
+    color: #00bb5e;
+    text-align: right;
+    margin: 10px 0 -10px 0;
+    font-weight: bold;
+  }
+  h6{
+    float:right;
+    font-size: 11px;
+    color: #c10061;
+    text-align: right;
+    margin: 10px 0 -10px 0;
+    font-weight: bold;
+  }
+  
+  .goallcon{
+  float: left;
+  line-height: 30px;
+  margin-right: 20px;
+  width: calc((100% - 20px * 2) / 2);
+  
+  label{
+    color: #575757;
+  }
+  
+  select{
+    width: 100%;
+    padding: 8px 3px;
+  }
+  p{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  h4{
+    font-size: 11px;
+    color: #464646;
+  }
+  
+}
+
+.goallcon:last-child {
+  margin-right: 0;
+  float: right;
+}
+
+}
+.dataCard:after, .upper:after{
+  display: table;
+  clear: both;
+  content: '';
+  
+}
+.lower{
+  clear: both;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #d2d2d2;
+  
+  .crumbInput{
+    float: left;
+    width: 65%;
+    
+    select{
+      padding: 10px 3px;
+      margin-right: 10px;
+    }
+    input{
+      padding: 7px 6px;
+      margin-right: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: $exp3;
+    }
+    p{
+      float: left;
+      font-size: 16px;
+      color: #4a4a4a;
+    }
+    h4{
+      float: left;
+      font-size: 16px;
+      color: #4a4a4a;
+      font-weight: bold;
+    }
+  }
+  
+
+}
+.commitDatacon{
+    float: right;
+    text-align: right;
+     border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #fa3855;
+  padding: 8px 20px;
+  color: #fff;
+
+  &:hover{
+    background-color: #f84a64;
+  }
+}
+
+.commitNumb{
+  @extend .commitDatacon;
+  background-color: #fa8495;
+}
+
+.commitDatapure{
+
+  float: right;
+ 
+   border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #595959;
+  padding: 8px 20px;
+  color: #fff;
+  
+}
+.lower:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+.midInfo{
+  width: 100%;
+  
+  h2{
+    float:left;
+    font-size: 11px;
+    color: #939393;
+    text-align: right;
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+  }
+  h5{
+    float:right;
+    font-size: 11px;
+    color: #00bb5e;
+    text-align: right;
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+  }
+  h6{
+    float:right;
+    font-size: 11px;
+    color: #c10061;
+    text-align: right;
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+  }
+}
+midInfo:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+.formErr{
+  color: red;
+  font-size: 11px;
+  font-weight:normal;
+}
+.acTiveTab{
+  padding-bottom: 5px;
+  border-bottom: 2px solid #333;
+}
+
+
+
+
+@media (min-width: 651px) and (max-width:750px) {
+
+.dataCard{
+ .goallcon{
+  margin-right: 0px;
+  width: 100%;
+  
+}
+}
+
+.margTOp{
+  margin-top: 20px;
+}
+
+.lower{
+  .crumbInput{
+    float: left;
+    width: 65%;
+    
+    input{
+      padding: 7px 6px;
+      width: 100px;
+    }
+    
+  }
+}
+.commitDatacon{
+  float: right;
+  
+  }
+
+}
+
+
+
+@media (min-width: 471px) and (max-width:650px) {
+
+.dataCard{
+ .goallcon{
+  margin-right: 0px;
+  width: 100%;
+  
+}
+}
+
+.margTOp{
+  margin-top: 20px;
+}
+
+.lower{
+  .crumbInput{
+    float: left;
+    width: 100%;
+    
+    input{
+      padding: 7px 6px;
+      width: 120px;
+    }
+    
+  }
+}
+.commitDatacon, .commitDatapure{
+  float: left;
+  margin-top: 20px;
+  }
+ 
+}
+
+@media (min-width: 200px) and (max-width:470px){
+  
+  .addDes{
+    
+    span{
+      font-size: 14px;
+     
+    }
+  }
+.focusGoal{
+  padding-top: 20px;
+  float:left;
+  text-align: left;
+}
+.settabStrip{
+  background-color: #e8e8e8; 
+}
+.accLinksCon{
+  padding-top: 20px;
+ }
+
+.dataCard{
+ .goallcon{
+  margin-right: 0px;
+  width: 100%;
+  
+}
+}
+
+.margTOp{
+  margin-top: 20px;
+}
+
+.lower{
+  .crumbInput{
+    float: left;
+    width: 100%;
+    
+    input{
+      padding: 7px 6px;
+      width: 80px;
+    }
+    
+  }
+}
+.commitDatacon, .commitDatapure{
+  float: left;
+  margin-top: 20px;
+  }
+
+}

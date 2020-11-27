@@ -1,0 +1,260 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+/*
+Author:   Venise TUTU.
+Title:    CSS Document
+*/
+
+$primaryfont: 'Jura', sans-serif;
+$primaryfont2: 'Ubuntu', sans-serif;
+$primaryfont1: 'Open Sans', sans-serif;
+$exp1: 'Russo One', sans-serif;
+$exp2: 'Barlow', sans-serif;
+$exp3: 'Alegreya Sans', sans-serif;
+$exp4: 'Palanquin', sans-serif;
+
+
+$primarycolor: #ff8000;
+$primarycolor2: #ff8000; $primarycolor2-hover: #ff8c1a; $primarycolor2-hover2: #ffa346;
+$primarycolor3:#00557d; $primarycolor3-hover: #0073aa;
+$primarycolor3: #1a8cff; $primarycolor2-hover: #ff8c1a;
+$subwhite: #e6e6e6;
+$subwhite2: #c5c5c5;
+$grey: #f8f8f8;
+$blueLink: #009eea; $blueLink-hover: #0086c6;
+
+$Achievers: #00b300;
+$Toprankers: #ffff06;
+$Highliners: #ff860d;
+$Beginners:red;
+
+.mWrapper{
+   width: 100%;
+}
+.successWrapper{
+   width: 400px;
+   
+   border: 5px solid #d6d6d6;
+   background-color:#f9f9f9;
+   height: 90px;
+   margin: 50px auto;
+   clear:both;
+   font-family: $primaryfont;
+}
+.successWrapperLeft{
+   width: 70%;
+   background-color:#f5f5f5;
+   float:left;
+   height: 100%;
+   padding:23px 25px 5px 25px;
+   margin: 0px auto 0 auto;
+   font-size: 25px;
+   text-align: center;
+   
+}
+.successWrapperRight{
+   width: 30%;
+   background-color:#e4e4e4;
+   float:right;
+   padding:28px 15px 5px 15px;
+   margin: 0px auto 0 auto;
+   text-align: center;
+   font-size: 20px;
+   height: 100%;
+   cursor: pointer;
+   
+   &:after{
+       clear:both;
+       content:'';
+       display:table;
+   }
+   &:hover{
+      background-color:#971341;
+      color: #fff;
+   }
+  
+}
+
+.regSuperCont{
+  width: 80%;
+  margin: 40px auto 0 auto;
+  font-family: $primaryfont1;
+}
+
+.regTitle{
+  font-size: 20px;
+}
+.formRow{
+   width: 100%;
+}
+.formRow:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+
+.fieldCont{
+  
+  float:left;
+  margin-right: 20px;
+  border-bottom: 2px solid #909090;
+  margin-top: 40px;
+  width: calc((100% - 20px * 2) / 2);
+  
+  
+  ul{
+    float: left;
+    li{
+      font-size: 30px;
+    }
+  }
+  
+ 
+  
+  div{
+   float: left;
+   width: 90%;
+  }
+  
+  .span{
+   clear:both;
+   font-size: 12px;
+   color: red; 
+  }
+}
+.inputBox{
+    float: left;
+    padding: 3px 10px;
+    border: none;
+    width: 90%;
+    
+}
+
+.fieldCont:last-child {
+  margin-right: 0;
+  float: right;
+}
+
+.regSuperCont:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+
+.finalField{
+  width: 100%;
+  margin-right: 20px;
+}
+.checkField{
+  font-size: 11px;
+  padding-top: 100px;
+  input{
+    margin-top: 20px;
+  }
+  span{
+    padding-left: 8px;
+    color: #606060;
+  }
+} 
+.regSumitButt {
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #fa3855;
+  padding: 8px 20px;
+  color: #fff;
+
+  &:hover{
+   background-color: #f75f76;
+  }
+}
+.loadReg {
+  padding: 6px 20px;
+  margin-top: 30px;
+  border-radius: 3px;
+  border: 1px solid #fa3855;
+  text-align: center;
+  width: 90px;
+}
+
+.erroR{
+   color: red;
+   font-size: 12px;
+   padding-left: 30px;
+   
+}
+
+@media (min-width: 651px) and (max-width:850px) {
+
+.regSuperCont{
+  width: 90%;
+  
+}
+.inputBox{
+    width: 88%;
+    
+}
+
+}
+
+
+
+@media (min-width: 471px) and (max-width:650px) {
+
+.fieldCont{
+  
+  margin-top: 40px;
+  width: 100%;
+}
+.inputBox{
+    width: 85%;
+    
+}
+.successWrapper{
+   width: 80%;
+}
+.successWrapperLeft{
+   width: 70%;
+   font-size: 20px;
+   padding-top:25px;
+}
+.successWrapperRight{
+   width: 30%;
+   font-size: 15px; 
+   font-weight: bold;
+}
+
+   
+}
+
+@media (min-width: 200px) and (max-width:470px){
+
+.successWrapper{
+   width: 90%;
+}
+.successWrapperLeft{
+   width: 70%;
+   font-size: 20px;
+   padding-top:25px;
+}
+.successWrapperRight{
+   width: 30%;
+   font-size: 15px;
+   font-weight: bold;
+}
+ 
+.fieldCont{
+  
+  margin-top: 40px;
+  width: 100%;
+}
+.inputBox{
+    width: 85%;
+    
+}
+.strethPicky{
+  width: 230px !important; 
+}
+
+}

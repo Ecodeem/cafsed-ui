@@ -1,0 +1,232 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+/*
+Author:   Venise TUTU.
+Title:    CSS Document
+*/
+
+
+$primaryfont1: 'Open Sans', sans-serif;
+$exp1: 'Russo One', sans-serif;
+$exp2: 'Barlow', sans-serif;
+$exp3: 'Alegreya Sans', sans-serif;
+$exp4: 'Palanquin', sans-serif;
+
+
+.footerWrapper{
+  background-color: #1b3a42d7;
+  padding: 10px 0 50px 0;
+  color: rgb(201, 196, 196);
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.footBrace{
+  width: 70%;
+  margin: 0 auto;
+
+  &:after{
+    content: '';
+    clear:both;
+    display: table;
+  }
+}
+.footCollmn{
+  float: left;
+  width: 25%;
+  margin-top: 50px;
+
+  li{
+    cursor: pointer;
+    margin-bottom: 3px;
+
+    &:hover{
+      color: rgb(182, 179, 179);
+      text-decoration: underline;
+    }
+  }
+}
+.footTilt{
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  
+}
+.footSocial{
+  float: right;
+  width: 25%;
+  margin-top: 50px;
+
+  li{
+    float:left;
+    width: 30px;
+    height: 30px;
+    margin: 10px 0 0 15px;
+    cursor: pointer;
+
+    img{
+      width: 100%;
+      height: 100%;
+
+      &:hover{
+        transform: scale(1.2);
+        transition: ease-in .3s;
+      }
+    }
+  }
+  &:after{
+    content: '';
+    clear:both;
+    display: table;
+  }
+}
+.footCopyr{
+  padding-top: 40px;
+  background-color: #10333bd7;
+  padding: 5px 10px;
+  font-family: 'Montserrat', sans-serif;
+  &:after{
+    content: '';
+    clear:both;
+    display: table;
+  }
+}
+.securImg{
+  float:left;
+  width: 50px;
+  height: 30px;
+  
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.footCopyText{
+  float:right;
+  width: 250px;
+  font-size: 10px;
+  text-align: right;
+ color: #9dd1d1d7;
+ 
+ span{
+   cursor: pointer;
+   &:hover{
+     text-decoration: underline;
+   }
+ }
+
+}
+
+@media (min-width: 651px) and (max-width:750px) {
+
+  .suppportCard{
+     width: calc((100% - 20px * 2) / 2);
+  }
+  .suppportCard:last-child {
+    margin-right: 0;
+    float: left;
+  }
+  .suppportCard:nth-child(3n+3) {
+    
+    margin-right: 20px;
+    float: left;
+  }
+  .ListCountry{
+   
+    width: 80%;
+  }
+  .countryBox{
+    width: 50%; 
+    
+  }
+  
+ 
+     
+  }
+
+  @media (min-width: 650px) and (max-width:1000px) {
+  
+    .footBrace{
+      width: 90%;
+      margin: 0 auto;
+    }
+     
+  }
+  
+  
+  @media (min-width: 471px) and (max-width:650px) {
+  
+    .footBrace{
+      width: 90%;
+      margin: 0 auto;
+    }
+    .footCollmn{
+      float: none;
+      width: 100%;
+      margin-top: 30px;
+      text-align: center;
+
+      li{
+        
+        display: inline;
+        cursor: pointer;
+        margin-left: 3px;
+        padding: 0 2px;
+        text-align: center;
+        float: left;
+
+      &:after{
+        content: ' /';
+      }
+      }
+      &:after{
+        content: '';
+        clear:both;
+        display: table;
+      }
+    }.footSocial{
+      float: none;
+      width: 200px;
+      margin: 30px auto 0 auto;
+    }
+     
+  }
+  
+  @media (min-width: 200px) and (max-width:470px){
+  
+    .footBrace{
+      width: 90%;
+     
+    }
+    .footCollmn{
+      float: none;
+      width: 100%;
+      margin-top: 30px;
+      text-align: center;
+
+      li{
+        
+        display: inline;
+        cursor: pointer;
+        margin-left: 3px;
+        padding: 0 2px;
+        text-align: center;
+        float: left;
+
+      &:after{
+        content: ' /';
+      }
+      }
+      &:after{
+        content: '';
+        clear:both;
+        display: table;
+      }
+    }.footSocial{
+      float: none;
+      width: 200px;
+      margin: 30px auto 0 auto;
+    }
+
+  
+  
+  }

@@ -1,0 +1,238 @@
+    html {
+        background-color: lightpink;
+        width: 100%;
+        height: 2000px;
+    }
+    
+    .body_div {
+        color: whitesmoke;
+        width: 100%;
+        background-color: rgba(36, 34, 34, 0.986);
+    }
+    /*=============================================
+=            Navigation section            =
+=============================================*/
+    
+    .nav_menu a:hover {
+        display: block;
+        color: red;
+        -webkit-transform: scale(2, 2);
+        -ms-transform: scale(2, 2);
+        text-decoration: none;
+    }
+    
+    li,
+    a {
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .nav_menu li a:link,
+    .nav_menu li a:visited {
+        background-color: gold;
+        display: block;
+        text-decoration: none;
+        margin: 0 0 0.2em 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        box-shadow: 3px 3px 3px 3px rgba(43, 43, 77, 0.5);
+    }
+    
+    .nav_menu {
+        background-image: url(images/headerr.jpg);
+        margin: 0 auto;
+        width: 100%;
+        height: 200px;
+        padding: 0px;
+        list-style: none;
+    }
+    
+    .nav_menu li {
+        float: left;
+        width: 140px;
+        height: 50px;
+        margin: 20px;
+    }
+    
+    .nav_menu a {
+        height: 50px;
+        text-decoration: none;
+        display: block;
+        line-height: 50px;
+        text-align: center;
+    }
+    
+    .nav_menu ul {
+        padding: 50px;
+        overflow: hidden;
+        width: 900px;
+        margin: 0 auto;
+    }
+    /*=====  End of Navigation section  ======*/
+    /*=============================================
+    =            welcome section            =
+    =============================================*/
+    
+    a:hover {
+        display: block;
+        color: red;
+    }
+    
+    a:visited {
+        color: salmon;
+    }
+    
+    #welcomediv {
+        background-color: black;
+        color: yellow;
+        background-image: ;
+        text-align: center;
+        margin-top: 0px;
+        font-weight: bold;
+        font-size: xx-large;
+    }
+    /*=====  End of welcome section  ======*/
+    /*=============================================
+    =            call icon            =
+    =============================================*/
+    
+    .call_icon img {
+        padding: 20px;
+    }
+    
+    .call_icon {
+        margin-left: 90%;
+        position: fixed;
+        margin-top: auto;
+        background-color: black;
+        width: 100px;
+        height: 100px;
+    }
+    /*=====  End of call icon  ======*/
+    /*=============================================
+=            RIGHT DIV            =
+=============================================*/
+    
+    .right_div {
+        background-color: black;
+        box-shadow: 5px 5px 5px 5px;
+        float: right;
+        width: 46%;
+        height: 600px;
+        margin: 10px;
+    }
+    /*=====  End of RIGHT DIV  ======*/
+    /*=============================================
+=            LEFT DIV            =
+=============================================*/
+    
+    .left_div img {
+        width: 45px;
+        height: 45px;
+        display: block;
+        margin: auto;
+    }
+    
+    .left_div h5,
+    .left_div p,
+    .left_div h1 {
+        text-align: center;
+    }
+    
+    .left_div {
+        background-image: url(images/table-section-bg.jpg);
+        background-size: cover;
+        box-shadow: 5px 5px 5px 5px;
+        float: left;
+        width: 46%;
+        height: 600px;
+        margin: 10px;
+    }
+    /*=====  End of LEFT DIV  ======*/
+    /*=============================================
+=            TABLE            =
+=============================================*/
+    
+    .table {
+        margin-top: 650px;
+        background-image: url(images/table.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+    }
+    
+    .table p {
+        padding-bottom: 20px;
+        padding-top: 80px;
+    }
+    
+    .table li {
+        margin: 20px 0;
+        padding-left: 40px;
+    }
+    
+    .table p,
+    .table li {
+        font-weight: bold;
+        padding-left: 40px;
+        font-size: 24;
+        color: snow;
+        text-align: justify;
+        width: 50%;
+    }
+    /*=====  End of TABLE  ======*/
+    /*=============================================
+    =            FOOTER            =
+    =============================================*/
+    
+    footer {
+        margin-top: 80px
+    }
+    /*=====  End of FOOTER  ======*/
+    /*=============================================
+    =            about section            =
+    =============================================*/
+    
+    .abt {
+        background-image: url(images/aboutbg.jpg);
+        padding: 10px;
+        color: whitesmoke;
+    }
+    /*=====  End of about section  ======*/
+    
+    .shortcutbg {
+        background-image: url(images/payment.jpg);
+        background-size: cover;
+        padding: 10px;
+    }
+    
+    .foot1 {
+        padding-top: 100px;
+    }
+    
+    .footersection ul {
+        display: block;
+        width: 20%;
+        float: left;
+    }
+    
+    .warn p {
+        margin: 0;
+        font-size: 15px;
+        text-align: center;
+        padding: 2px;
+        width: 100%;
+    }
+    
+    .copyright p {
+        text-align: center;
+    }
+    
+    .footersection {
+        background-color: rgba(10, 10, 10, 0.986);
+        height: 300px;
+        text-align: center;
+        box-shadow: 3px 0px 3px 3px black;
+        margin: 20px 0px;
+    }

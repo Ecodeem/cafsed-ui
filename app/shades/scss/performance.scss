@@ -1,0 +1,340 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+/*
+Author:   Venise TUTU.
+Title:    CSS Document
+*/
+
+
+
+$primaryfont: 'Jura', sans-serif;
+$primaryfont2: 'Ubuntu', sans-serif;
+$primaryfont3: 'Open Sans', sans-serif;
+$exp1: 'Russo One', sans-serif;
+$exp2: 'Barlow', sans-serif;
+$exp3: 'Alegreya Sans', sans-serif;
+$exp4: 'Palanquin', sans-serif;
+
+
+$primarycolor: #ff8000;
+$primarycolor2: #ff8000; $primarycolor2-hover: #ff8c1a; $primarycolor2-hover2: #ffa346;
+$primarycolor3:#00557d; $primarycolor3-hover: #0073aa;
+$primarycolor3: #1a8cff; $primarycolor2-hover: #ff8c1a;
+$subwhite: #e6e6e6;
+$subwhite2: #c5c5c5;
+$grey: #f8f8f8;
+$blueLink: #009eea; $blueLink-hover: #0086c6;
+
+$Achievers: #00b300;
+$Toprankers: #ffff06;
+$Highliners: #ff860d;
+$Beginners:red;
+
+
+
+.TitleMcon{
+   width: 100%;
+}
+.TitleMcon:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+.TitleContt{
+   float:left;
+   width: 50%;
+   padding: 5px 0;
+   margin: 40px 0 20px 0;
+   background-color: #fff;
+   border: 1px solid #d6d6d6;
+   font-size: 20px;
+   text-align: center;
+   color: #494949;
+   font-weight: bold;
+   font-family: $exp3;
+}
+.dataCube{
+   background-color: #fff;
+   border: 1px solid #d6d6d6;
+   padding: 20px 15px;
+   width: 100%;
+   height: 450px;
+   margin-bottom: 30px;
+}
+.dataCubeSubNat{
+   @extend .dataCube;
+   height: 350px;
+}
+
+.dataCubeTitle{
+   font-size: 16px;
+   font-family: $exp3;
+   font-weight: bold;
+   color: #5c5c5c;
+}
+.dataCubeLiner{
+   width: 100%;
+   
+   thead{
+      
+      width:1800px;
+       display:block;
+      
+      tr{
+         display:block;
+         
+      }
+      
+   }
+   tbody{
+      height: 300px;
+      display:block;
+      overflow:hidden;
+      overflow-y:scroll;
+  
+  
+  width:1800px;
+   }
+   
+   table{
+    
+     font-family: $primaryfont3;
+     overflow: auto;
+     display: block;
+    
+     
+     td, th{
+      width: 200px;
+      vertical-align: middle;
+   }
+     
+   }
+   
+   .head1{
+      background-color: #efefef;
+      color: #7a7a7a;
+      font-weight: bold;
+      padding: 5px 0;
+      //border: 1px solid #333;
+      text-align: center;
+   }
+   .head2{
+      
+      background-color: #dddddd;
+      width: 200px;
+      color: #757575;
+      font-weight: bold;
+      font-size: 12px;
+      //border: 1px solid #333;
+      text-align: center;
+   }
+   .bodd{
+      
+      color: #000;
+      font-size: 12px;
+      //border: 1px solid #333;
+      text-align: center;
+      padding: 1px;
+      
+
+   }
+   .serial{
+      width: 100px;
+      
+   }
+   .statecol{
+      font-weight: bold;
+      color: #666666;
+   }
+   .statebodcol{
+      width: 144px;
+   }
+   .cc{
+      width: 130px;
+   }
+}
+
+.dataCubeLinerSubNat{
+   @extend .dataCubeLiner;
+   
+   tbody{
+      height: 200px;
+      }
+}
+
+.green{
+         width:100%;
+         background-color: #00b300;
+         padding: 5px;
+         position:relative;
+      }
+      .green:before{
+         width:100%;
+         content:'';
+         position: absolute;
+         top: 0;
+         left: 0;
+         border-bottom: 5px solid #00b300;
+         border-left: 5px solid #fff;
+         border-right: 5px solid #fff;
+      }
+      .green:after{
+         width:100%;
+         content:'';
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         border-top: 5px solid #00b300;
+         border-left: 5px solid #fff;
+         border-right: 5px solid #fff;
+      }
+.yellow{
+   width:100%;
+         background-color: #ffff06;
+         padding: 5px;
+         position:relative;
+}
+.yellow:before{
+   width:100%;
+         content:'';
+         position: absolute;
+         top: 0;
+         left: 0;
+         border-bottom: 5px solid #ffff06;
+         border-left: 5px solid #fff;
+         border-right: 5px solid #fff
+}
+.yellow:after{
+   width:100%;
+         content:'';
+         position: absolute;
+         bottom: 0;
+         left: 0;
+   border-top: 5px solid #ffff06;
+   border-left: 5px solid #fff;
+         border-right: 5px solid #fff;
+}
+
+.orange{
+   width:100%;
+         background-color: #ff860d;
+         padding: 5px;
+         position:relative;
+}
+.orange:before{
+   width:100%;
+         content:'';
+         position: absolute;
+         top: 0;
+         left: 0;
+         border-bottom: 5px solid #ff860d;
+         border-left: 5px solid #fff;
+         border-right: 5px solid #fff
+}
+.orange:after{
+   width:100%;
+         content:'';
+         position: absolute;
+         bottom: 0;
+         left: 0;
+   border-top: 5px solid #ff860d;
+   border-left: 5px solid #fff;
+         border-right: 5px solid #fff;
+}
+.red{
+   width:100%;
+         background-color: red;
+         padding: 5px;
+         position:relative;
+}
+.red:before{
+   width:100%;
+         content:'';
+         position: absolute;
+         top: 0;
+         left: 0;
+         border-bottom: 5px solid red;
+         border-left: 5px solid #fff;
+         border-right: 5px solid #fff
+}
+.red:after{
+   width:100%;
+         content:'';
+         position: absolute;
+         bottom: 0;
+         left: 0;
+   border-top: 5px solid red;
+   border-left: 5px solid #fff;
+         border-right: 5px solid #fff;
+}
+.grey{
+   width:100%;
+         background-color: grey;
+         padding: 5px;
+         position:relative;
+}
+.grey:before{
+   width:100%;
+         content:'';
+         position: absolute;
+         top: 0;
+         left: 0;
+         border-bottom: 5px solid grey;
+         border-left: 5px solid #fff;
+         border-right: 5px solid #fff
+}
+.grey:after{
+   width:100%;
+         content:'';
+         position: absolute;
+         bottom: 0;
+         left: 0;
+   border-top: 5px solid grey;
+   border-left: 5px solid #fff;
+         border-right: 5px solid #fff;
+}
+.legendCont{
+   margin: 10px 0 5px 0;
+   font-family: $exp3;
+   color: #727272;
+   
+   ul{
+      
+      
+   li{
+      float:left;
+      margin-right: 20px;
+      
+      div{
+         float: left;
+        
+      }
+      .legBox{
+        width: 15px;
+         height: 15px;
+         margin-right: 5px;
+          
+      }
+   }
+   }
+   ul:after, li:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+}
+
+.Achiever{
+   background-color: #00b300;
+}
+.Topranker{
+   background-color: #ffff06;
+}
+.Highliner{
+   background-color: #ff860d;
+}
+.Beginner{
+   background-color: red;
+}
+
+

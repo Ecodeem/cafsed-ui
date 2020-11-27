@@ -1,0 +1,1047 @@
+
+
+@font-face{
+    font-family: 'trajan';
+    src: url('../webfonts/trajan.ttf');
+}
+@font-face{
+    font-family: 'raleway';
+    src: url('../webfonts/Raleway.ttf');
+}
+.trajan-font{
+	font-family: 'trajan';
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: trajan;
+	text-align: center;
+}
+p{
+	text-align: center;
+}
+.row{
+	margin: 0!important;
+}
+.no-padding {
+	    padding: 0!important;
+	}
+.txt-justify{
+	text-align: justify!important;
+}
+.p-100{
+	padding: 0 95px;
+}
+.afrii{
+  padding: 60px 0;
+}
+
+body{
+	font-family: 'raleway',sans-serif;
+	overflow-x: hidden;
+	transition: 0.5s all;
+
+	font-size: .9em;
+
+	-webkit-transition: 0.5s all;
+
+	-o-transition: 0.5s all;
+
+	-moz-transition: 0.5s all;
+
+	-ms-transition: 0.5s all;
+	overflow-x: hidden; 
+}
+.clearfix{
+	clear: both;
+	padding: 2px;
+}
+/*margins*/
+.m-l-10{
+	margin-left: 25px!important;
+}
+.m-l-5{
+	margin-left: 5px!important;
+}
+.m-l-15{
+	margin-left: 15px!important;
+}
+img{
+	max-height: 100%;
+	max-width: 100%;
+}
+a{
+	text-decoration: none!important;
+}
+
+/*=========default color area =====================*/
+.default-txt{
+	color: #0a6e9f;
+}
+.default-background{
+	background: #0a6e9f!important;
+}
+.default-green{
+	background: #60b849!important;
+}
+.white{
+	color:#fff!important;
+	cursor:pointer !important;
+}
+.white:hover{
+	color: #0a6e9f !important;
+}
+/*--- main-bg ----*/
+#main-bg,#lg-nav{
+	/*width: 100%;*/
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: 100vh;
+	overflow: auto;
+	
+}
+
+.abt-drop,.sdg_data,.get_drop,.sdg_drop{
+	height: 0;
+	overflow:hidden;
+	transition: .3s ease;
+	cursor: pointer;
+}
+.abt_show{
+	height: 140px!important;
+	font-size: 11px !important;
+	margin-left: 10px !important;
+}
+.drop-wrap{
+	padding: 6em 0 0 0;
+}
+.caret_down{
+	 width: 25px;
+    margin: 0 0 5px 0;
+
+}
+
+	/* ======================this is the start of the slider styling============== */
+.slider1,.slider2{
+	
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: 100vh!important;
+	overflow: hidden;
+}
+.slider1{
+	background-image:url('/app/utilities/images/bg1.jpg');
+	/*position: absolute;*/
+}
+.slider2{
+	background-image:url('/app/utilities/images/bg2.jpg');
+	/*position: absolute;*/
+}
+.middle-content{
+	padding: 15em;
+	color: #fff;
+	text-align: center;
+}
+.middle-content h1{
+	font-size: 4em;
+	color: #fff;
+	line-height: 65px;
+}
+.white-layer{
+	width: 100%; 
+	height: 90px; 
+	background: #fff; 
+	position: relative;
+	z-index: 3;	
+}
+.join-us{
+	width: 180px; 
+	margin: 5px auto;
+	color: #fff; 
+	background: #0a6e9f;
+	overflow: hidden;
+	position: relative;
+	padding: 30px; 
+	line-height: 0.3; 
+	border-radius: 40px;
+	font-size: 1.3em;
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+
+}
+
+.sign-in{
+	width: 120px; 
+	margin: 5px 10px;
+	color: #fff; 
+	background: #0a6e9f;
+	overflow: hidden;
+	position: relative;
+	padding: 20px; 
+	line-height: 0.3; 
+	border-radius: 10px;
+	font-size: 1.1em;
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+.reg-summit{
+	color:#fff;
+	font-size: 1.5em;
+
+}
+.reg-summit:hover{
+	color: #0a6e9f;
+}
+.pat-img img{
+	width: 100px; 
+	/*margin: 0 auto;*/
+}
+.pat-wrap{
+	margin: auto;
+}
+
+
+/*sparkle */
+.spark::before{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(120deg, transparent, rgba(225,225,225, .3), transparent);
+	transition: all 650ms; 
+}
+.spark:hover::before{
+	left: 100%;
+}
+
+/*=====================styling for the flip images section =================================*/
+.flipped-image-wrap{
+	overflow: hidden;
+	padding: .5em 0 0 0;
+	text-align: right;
+	position: relative;
+	z-index: 2;
+}
+
+.flipped-image-wrap ul li {
+	vertical-align: middle;
+	margin: 0.5rem;
+	display: inline-block;
+}
+.flipped-image-wrap ul li a {
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-indent: -9999px;
+	display: block;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.flipped-image-wrap ul li a:hover {
+	background-position: 0 0;
+}
+.flipped-image-wrap ul li small{
+	color: green;
+}
+
+/*fliped images starts here */
+
+.ibfim,.inno,.spread,.report{
+    width: 45px;
+	height: 35px;
+}
+.ibfim{
+	background-image: url('/app/utilities/images/ibfim.png');
+}
+.inno{
+	background-image: url('/app/utilities/images/inno.png');
+}
+.spread{
+	background-image: url('/app/utilities/images/spread.png');
+}
+.report{
+	background-image: url('/app/utilities/images/report.png');
+}
+
+
+
+/*=======Styling of the large navigation starts here */
+#lg-nav{
+	background-image:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('/app/utilities/images/banner-bg.png');
+	z-index: 2;
+	transition: .9s cubic-bezier(.23,1,.32,1);
+	width: 100%;
+	position: absolute;
+}
+.lg-nav{
+	transform: translateY(-100vh);  /*---- this styling allows the nav menu to go up fully ---*/
+}
+
+.change-lg-nav{
+	transform: translateY(0);
+}
+/*=========================styling for the top control navigation ======================*/
+.col-nav{
+	position: absolute; 
+}
+/*.col-nav-scroll{
+	position: sticky!important;
+	top: 0;
+	z-index: 10; 
+	background: white;
+
+}*/
+/*===== ==================styling for the navigation menu==========*/
+nav{
+	width: 30%;
+	border-right: solid 2px #e8e8e8;
+	position: absolute;
+	z-index: 2;
+	display: block;
+}
+
+.lg-nav ul li{
+	list-style: none;
+	padding: 10px; 
+}
+ul li{
+	list-style: none;
+}
+ul li a {
+	color: #d3d3d3;
+	font-size: 1.3em;
+	transition: .4s ease-in-out
+	
+}
+ul li a:hover{
+	color:#0a6e9f;
+}
+
+/*-----------------styling for the brand--------------------*/
+.brand{
+	width: 14em; 
+	float: left;
+	position: relative;
+	z-index: 3;
+	margin: 0 1em;
+}
+.lang{
+	/*width: 15em; */
+	float: left;
+	position: relative;
+	z-index: 3;
+	padding: 2em 0 0 0;
+}
+.fadeOut{
+	opacity: 0;
+	transition: .4s ease;
+}
+.fadeIn{
+	display: block;
+	transition: .3s ease;
+}
+
+/*----------------------------------styling for large top bg text -----------------------------*/
+.bg-text h2{
+	padding: 3em 1em;
+	font-size: 3.5em;
+	cursor: pointer;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/*==========Styling for the hamburger button===============*/
+
+.hamburger{
+	float:right;
+	padding: 20px;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+}
+.line1,.line2,.line3,.line-x-1,.line-x-2{
+	background: #000000;
+	margin: 5px 0;
+	width: 35px; 
+	height: 4px; 
+	overflow: hidden;
+	
+}
+.line1{
+	transition: 0.3s ease-in-out;
+}
+.line2{
+	transition: 0.4s ease-in-out;
+}
+.line3{
+	transition: 0.5s ease-in-out;
+}
+
+.burger-line1,.burger-line2,.burger-line3{
+	width: 5px; 
+	height: 4px; 
+	background: #b6b6b6; 
+	transform: skew(-20deg);
+}
+.burger-line1{
+	transition: .4s ease-in-out;
+	margin: 0 -5px;
+}
+.burger-line2{
+	transition: .6s ease-in-out;
+	margin: 0 8px;
+}
+.burger-line3{
+	transition: .8s ease-in-out;
+	margin: 0 -5px;
+}
+
+.move{
+	margin-left: 50px;
+}
+/*---------*/
+.hamburger-x{
+	margin-top: -1em;
+}
+.line-x-1,.line-x-2{
+	background: #fff;
+	margin: -5em 0;
+	display:none;
+	transition: 0.6s ease;
+}
+.line-x-1{
+	transform: rotate(45deg);
+}
+.line-x-2{
+	transform: rotate(-45deg);
+}
+.change{
+	transform: translate3d(4em, 0, 0px);
+}
+.change-x{
+	margin: -4px 0;
+	display: block;
+	transition: 0.6s ease;
+}
+/*---------*/
+/*=====the hamburger styling ends here=====*/
+
+
+.sticky-footer{
+	padding: 12px; 
+	background: #fff; 
+	position: fixed;
+	bottom: 0;
+	z-index: 30; 
+	height: 6rem;
+	margin: auto;
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.sticky-item{
+	width: 70px;
+	margin: 5px;
+	
+}
+.sticky-item img{
+	/*transform: scale(1);*/
+	transition: .9s cubic-bezier(.23,1,.32,1);
+	
+}
+
+/*=========================meet our team section -============================================*/
+.team-pass{
+	width: 70px; 
+	height: 70px; 
+	overflow: hidden;
+	border-radius: 100%;
+}
+.team-pass img{
+	max-height: none!important
+}
+.team-img-span{
+	padding: 10px;
+}
+.team{
+	margin: 40px 0;
+}
+/*==================================styling for the first column================================*/
+.first-col h2{
+	padding: 1em 0 0 0;
+}
+
+/*========================-this is the start of the countis section for the 3 column =========================*/
+.col-circle-countis{
+	border: 2px solid black; 
+	border-radius: 100%; 
+	width: 170px; 
+	margin: auto;
+}
+
+
+/*=========================================styling for footer================================================*/
+.footer{
+	background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5)), url('/app/utilities/images/bg1.jpg');
+	background-repeat: no-repeat;
+	background-color: #03031f;
+	background-position: center;
+	background-size: cover;
+	color:#fff;
+	font-size: .8em;
+	padding: 10px;
+	margin: 40px 0;
+}
+
+.pay-met-img{
+	width: 7.8em; 
+	height: 8em;
+}
+.footer-ul-head{
+	font-family: trajan;
+	font-size: 1.5em;
+}
+.donate-form2{
+	margin:0 25px;
+}
+.donate-form2 input{
+	border: none; 
+	background: rgba(225,225,225,0.5);
+	width: 145px;
+	height: 30px;
+	color: #fff;
+}
+.donate-form2 button{
+	border: none;
+	overflow: none; 
+	position: relative;
+	height: 30px;
+	background:#0a6e9f;
+	color: #fff;
+	border-radius: 0;
+	margin-left: 5px;
+	padding:3px;
+}
+.social_wrap{
+	margin: 0 auto;
+}
+.social_wrap ul li{
+	display: inline-block;
+	text-align: center;
+	margin: 0 5px;
+}
+.social_wrap ul li a img{
+	transition: .6s cubic-bezier(.23,1,.32,1);
+}
+.social_wrap ul li a img:hover{
+	margin-top: -20px;
+}
+/*======================visualize styling =========================*/
+
+.visualize{
+	margin: 6em 0;
+}
+
+/*===========================================styling for who we are section ======================================*/
+
+
+.image-area
+{
+	/*top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+	position: relative;
+}
+
+.img-wrapper
+{
+	width: 300px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+	margin: auto;
+}
+
+
+.img-wrapper img
+{
+	height: 400px;
+	width: 300px;
+	/*filter: grayscale(100%);*/
+	transition: 2s;
+}
+.img-wrapper:hover img
+{
+	filter: grayscale(0%);
+	transform: scale(1.1);
+}
+
+.img-wrapper h2
+{
+	background: #0a6e9f;
+	font-family: Poppins;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 10px 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/*transform: perspective(400px) rotateY(90deg);*/
+	/*transform-origin: right;*/
+	transition: 1s;
+	font-size: 1.1em;
+}
+
+.img-wrapper:hover h2
+{
+	/*transform: perspective(400px) rotateY(0deg);*/
+}
+
+.img-wrapper ul
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li
+{
+	background: #333;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	transform: perspective(800px) rotateY(90deg);
+	transition: .5s;
+	transform-origin: left;
+}
+
+.img-wrapper:hover ul li
+{
+	transform: perspective(800px) rotateY(0deg);
+}
+
+.img-wrapper:hover ul li:nth-child(1)
+{
+	transition-delay: .2s;
+}
+
+.img-wrapper:hover ul li:nth-child(2)
+{
+	transition-delay: .6s;
+}
+
+.img-wrapper:hover ul li:nth-child(3)
+{
+	transition-delay: .8s;
+}
+
+.img-wrapper:hover ul li:nth-child(4)
+{
+	transition-delay: 1s;
+}
+
+.img-wrapper ul li a
+{
+	color: tomato;
+	background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li i
+{
+	color: tomato;
+	background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li i:hover
+{
+	color: #fff;
+	background: rgba(255,255,255,0);
+}
+
+
+
+
+.our-mission{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url('/app/utilities/images/banner-bg2.jpg');
+}
+.who-we-are,.our-mission{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 5em 0 0 0;
+	color: #fff; 
+	padding: 30px;
+}
+.who-we-are p,.our-mission p{
+	line-height: 2;
+}
+.who-we-are h3,.our-mission p{
+	padding: .5em;
+	cursor: pointer;
+}
+.who-we-are h3::after{
+	content: '';
+	display: block;
+	width: 100px; 
+	height: 3px; 
+	background: #0a6e9f;
+	margin: 0 auto;
+	transition: .3s cubic-bezier(.23,1,.32,1);
+	cursor: pointer;
+}
+.who-we-are h3:hover::after{
+	width: 140px; 
+}
+
+.our-mission h3::after{
+	content: '';
+	display: block;
+	width: 100px; 
+	height: 3px; 
+	background: #60b849;
+	margin: 0 auto;
+	transition: .3s cubic-bezier(.23,1,.32,1);
+	cursor: pointer;
+}
+.our-mission h3:hover::after{
+	width: 140px; 
+}
+
+.read-more{
+	width: 100px; 
+	padding: 10px; 
+	border-radius: 10px;
+	margin: 0 auto;
+	background: #0a6e9f; 
+	color:#fff;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.donate-btn{
+	margin: 0 auto 45px;
+	width: 15rem;
+	padding: 15px;
+	text-align: center;
+	color:#fff;
+	border-radius: 80px;
+	font-weight: 700;
+	/*font-size: 1.5em;*/
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+	position: relative;
+	overflow: hidden;
+
+}
+.eco-mobile{
+	text-align: center;
+}
+.eco-mobile img{
+	width: 200px;
+	transition: .4s ease-in-out;
+}
+.eco-mobile img:hover{
+	width: 220px;
+}
+.ecodeem-phone{
+	margin: 100px 0 0 0;
+}
+.ecodeem-wrap{
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	overflow: hidden;
+	background-image: linear-gradient(rgba(225,225,225,0.7),rgba(225,225,225,0.9)),url('/app/utilities/images/ecodeem-bg.jpg');
+	background-attachment: fixed;
+	padding: 30px;
+}
+.whatsapp{
+	top: 80%;
+}
+.back-to-top{
+	top: 90%;
+	display: none;
+}
+
+.whatsapp,.back-to-top{
+	position: fixed;
+	z-index: 900;
+	width: 45px;
+	right: 1%;
+	border: none;
+}
+.secure{
+	width:80px;
+	position: absolute;
+	z-index: 30;
+	margin: 15px 0 0 5px;
+}
+.plus1,.plus2,.plus3{
+	display: none;
+}
+.minus1,.minus2,.minus3{
+	display: none;
+}
+.founder-note-h3{
+	margin: 0 0 45px 0;
+}
+.spread-card{
+	width: 20rem;
+	margin: 10px auto;
+}
+.spread-card-vol{
+	width: 20rem;
+	margin: 10px auto;
+}
+.spread-card-vol::before{
+	content:'';
+	position: absolute;
+	width: 100%;
+	height:70px;
+	/*background: linear-gradient(120deg, transparent, rgba(225,225,225, .3), transparent);*/
+	/*background:red;*/
+	transition: all 650ms;
+	margin: 0 auto;
+	left: 0;
+}
+.get_invo{
+	padding: 0 7em;
+}
+.view-1,.view-2{
+	display: none;
+}
+.sign-wrap ul{
+	padding: 0;
+	margin: auto;
+}
+.sign-wrap ul li{
+	display: inline-block;
+
+}
+
+/*Extra small devices (portrait phones', less than 576px)*/
+/*// No media query for `xs` since this is the default in Bootstrap*/
+
+
+/*===========Responsiveness========================*/
+/*// Small devices (landscape phones, 576px and up)*/
+@media screen and (max-width:576px ){
+/*-----------------------for the nav-----------------------*/
+
+.mobPadding{
+	padding-top:20px!important;
+}
+
+.dsl-coll{
+	margin-left: 40px;
+}
+
+    nav{
+		border-bottom: solid 2px #e8e8e8;
+		border-right: solid 0 ;
+		width: 90%!important;
+		margin: 0 auto;
+	}
+	.middle-content{
+		padding: 5em 2em;
+		color: #fff;
+		text-align: center;
+		
+	}
+	.flipped-image-wrap{
+		margin: 5em 0;
+		text-align: justify;
+		z-index:2;
+		
+	}
+	.flipped-image-wrap ul li small {
+		color: #fff;
+		
+	}
+	.flipped-image-wrap ul {
+		text-align: center;
+		
+	}
+	
+	.middle-content{
+		padding: 12em 1em;
+	}
+	
+	.drop-wrap{
+		padding: 3em 0 0 0;
+	}
+
+	.first-col h2 {
+	    font-size: 1.5em;
+	}
+
+	.first-box, .first-box2 {
+	    width: auto;
+	    padding: 16px;
+	    margin: 5px 0;
+	}
+	.no-padding {
+	    padding: 0!important;
+	}
+	.no-margin{
+		margin: 0!important;
+	}
+
+	.donate-form input,.donate-form button{
+		padding: 10px;
+	}
+	.who-we-are, .our-mission{
+		padding: 10px;
+		margin: 1rem 0 0 0;
+	}
+
+	.sec-multi-dim{
+		display:block;
+	}
+	.first-multi-dim{
+		display:none;
+	}
+
+	.plus1,.plus2,.plus3{
+	    float: right;
+	    display: block;
+	    width: 18px;
+	    margin: 0 2em;
+	}
+	.minus1,.minus2,.minus3{
+	    float: right;
+	    width: 18px;
+	    margin: 0 2em;
+	}
+	.quick-ul1,.quick-ul2,.quick-ul3{
+		overflow: hidden;
+		height: 20px;
+		transition: .8s cubic-bezier(.23,1,.32,1);
+	}
+	.quick-show{
+		height: 133px!important;
+	}
+
+	.cu-show{
+		display: block!important;
+	}
+	.cu-hide{
+		display: none!important;
+	}
+	.middle-content {
+	    padding: 15em 1em!important;
+	}
+	.middle-content h1 {
+		font-size: 2em;
+		line-height: 35px;
+	}
+	.join-us{
+		width: 135px;
+		padding: 25px;
+	}
+	.brand {
+	    width: 9em!important;
+	}
+	.hamburger{
+		padding: 12px;
+		margin: 0;
+	}
+	
+	.join-us {
+	    width: 160px;
+	}
+
+	.ecodeem-wrap{
+		padding: 20px 0;
+	}
+	.view-1,.view-2{
+		display: block;
+		color:#fff;
+		cursor: pointer;
+	}
+	.sec-nav,.sec-nav2{
+		
+		overflow: hidden;
+		transition: .4s ease-in-out;
+	}
+	.sec-nav-view{
+		height: 15em!important;
+	}
+
+	ul li a{
+		font-size: 1em;
+	}
+
+}
+
+@media screen and (max-width:768px ){
+	.middle-content {
+	    padding: 15em 1em;
+	}
+		.flipped-image-wrap ul li small {
+	    color: #fff;
+	}
+	.flipped-image-wrap ul {
+		text-align: center;
+		padding: 0;
+	}
+	.donate-btn{
+		margin:10px auto;
+	}
+	.p-100{
+		padding: 10px;
+	}
+	.afrii{
+	  padding: 0;
+	}
+	.ecodeem-phone{
+		margin: 10px 0 0 0;
+	}
+	.lang{
+		padding: 1em 0 0 0;
+	}
+	.get_invo{
+		padding: 0;
+	}
+}
+
+@media screen and (max-width:800px ){
+/*-----------------------for the nav-----------------------*/
+
+	.first-box, .first-box2{
+		width: auto;
+		margin: 5px 0;
+	}
+	.p-15{
+		padding: 15px;
+	}
+
+	.brand {
+	    width: 11em;
+	}
+	.flipped-image-wrap{
+		padding:0!important;
+		margin: 70px 0;
+	}
+	.white-layer {
+	    width: 100%;
+	    height: 65px;
+	}
+
+
+}

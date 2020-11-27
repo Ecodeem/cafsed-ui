@@ -1,0 +1,220 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+/*
+Author:   Venise TUTU.
+Title:    CSS Document
+*/
+
+$primaryfont1: 'Open Sans', sans-serif;
+$exp1: 'Russo One', sans-serif;
+$exp2: 'Barlow', sans-serif;
+$exp3: 'Alegreya Sans', sans-serif;
+$exp4: 'Palanquin', sans-serif;
+
+
+$primarycolor: #ff8000;
+
+body{
+  margin: 0;padding: 0;
+    width: 100%; height: 100%;
+    background: url("") no-repeat  fixed; 
+}
+
+
+.source{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 200px;
+  font-size: 10px;
+  color: #8f8f8f;
+  text-align: right;
+  padding: 0 10px 0 0;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  font-family: $primaryfont1;
+}
+.locationBox{
+  width: 100%;
+  padding: 8px;
+  border:none;
+  border-bottom: 3px solid #c46200;
+  text-align: center;
+  font-size: 18px;
+  font-family: $primaryfont1;
+  color: #4b4b4b;
+  cursor: pointer;
+  background-color: inherit;
+  
+  option{
+      padding: 5px 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border:none;
+    }
+    option:hover{
+      background-color: #868686;
+    }
+}
+.locationBoxCont{
+  margin: 0 auto;
+  width: 300px;
+  position: relative;
+  img{
+    position: absolute;
+    right: 0px;
+    width: 28px;
+    height: 39px;
+    margin-top: 3px;
+  }
+  select{
+    background-image:url(/app/shades/images/jlo.png);
+    background-repeat:no-repeat;
+    background-position:280px;
+    
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+  
+  }
+  
+}
+.locationBoxCont:after{
+  display: table;
+  clear: both;
+  content: ''; 
+}
+.locaSelectionCont{
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  
+  input{
+    width: 98%;
+    margin: 0 auto;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 3px;
+    border: 1px solid #0093d9;
+  }
+}
+
+.indicatorTitlecont{
+  clear: both;
+  width: 100%;
+  background-color: #e1e1e1;
+  cursor: pointer;
+  text-align: center;
+}
+.indicatorTitle{
+  width: 80%;
+  padding: 10px 8px;
+  title: 14px;
+  font-family: $primaryfont1;
+  margin: 0 auto;
+}
+.indicatorsCont{
+  background-color: #fff;
+  position: absolute;
+  width:100%;
+  padding: 20px 10px 30px 10px;
+   height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+  box-shadow: 0px 1px 15px #d6d6d6;
+  z-index:100;
+}
+.collapseCont{
+  width: 95%;
+  font-family: $primaryfont1;
+  padding: 7px 0;
+ 
+  h1{
+    font-size:14px;
+  }
+  p{
+    font-size:12px;
+    color: #696969;
+    padding: 10px 0 0 20px;
+    font-weight: bold;
+  }
+  ul{
+    margin: 5px 0;
+  li{
+    padding: 5px 0 0 0px;
+    margin-left: 40px;
+    font-size:12px;
+    list-style-type: disc;
+    cursor: pointer;
+  }
+  li:hover{
+    color: #0080c0;
+  }
+  
+  }
+  
+}
+
+.pieWrap{
+  margin: 0 auto 0 auto;
+  width: 50%;
+}
+
+
+
+
+
+.dataOptions{
+  float: left;
+  font-family: $primaryfont1;
+  cursor:pointer;
+  li{
+    float: left;
+    width: 110px;
+    padding-right: 10px;
+    color: #707070;
+  }
+}
+.stratifier{
+  position: absolute;
+  background-color: #fff;
+  width: 100px;
+  padding: 5px;
+  box-shadow: 0px 1px 15px #d6d6d6;
+  z-index: 200;
+   
+   table{
+    width: 60px;
+    
+    td{
+      padding: 3px 0;
+    }
+   }
+}
+
+
+.ManageDatacon{
+    float: right;
+    text-align: right;
+    
+ 
+}
+  
+  .ManageDatacon [type="submit"]{
+   border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #fa3855;
+  padding: 8px 20px;
+  color: #fff;
+}
+
+.EditButt{
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #009ce8;
+  padding: 8px 20px;
+  color: #fff;
+}
+

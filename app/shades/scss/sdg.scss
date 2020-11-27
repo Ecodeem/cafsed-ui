@@ -1,0 +1,242 @@
+@charset "utf-8";
+@viewport { width: device-width; }
+/*
+Author:   Venise TUTU.
+Title:    CSS Document
+*/
+
+
+$primaryfont1: 'Open Sans', sans-serif;
+$primaryfont2: 'Roboto', sans-serif;
+
+$displaycolor: #696969;
+$blueLink: #009eea; $blueLink-hover: #0086c6;
+
+.sdgbracer{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sdgwhiteBoardHead{
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(233, 232, 232);
+  color:  rgb(73, 73, 73);
+  padding: 20px 8px;
+  font-family: $primaryfont1;
+}
+.sdgwhiteBoard{
+  width: 100%;
+  background-color: #fff;
+  font-family: $primaryfont1;
+  margin: 0px auto 0 auto;
+  padding:  30px 0;
+  text-align: justify;
+  &:after{
+    display:table;
+    content: '';
+    clear:both;
+  }
+}
+.sdgleft{
+  float: left;
+  width: 70%;
+  
+}
+.sdgright{
+  float: right;
+  margin-left: 30px;
+  width: 200px;
+ 
+}
+.sdgStrip{
+  width: 100%;
+  height: 100px;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.sdgPreamble{
+  margin-top: 30px;
+  p{
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+}
+.extDocument{
+  
+  margin: 10px 0 30px 0;
+  li{
+    float: left;
+    width: 45%;
+    height: 270px;
+    margin-right: 5%;
+   
+
+    div{
+      width: 100%;
+      height: 180px;
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    h3{
+      width: 100%;
+      height: 20px;
+      font-size: 18px;
+      padding-top: 20px;
+      text-align: center;
+      color:  rgb(80, 79, 79);
+
+      &:hover{
+        color:  #0086c6;
+      }
+    }
+
+    
+  }
+  &:after{
+    display: table;
+    clear: both;
+    content: '';
+  }
+  
+}
+.sdgDetailTab{
+  
+  margin: 20px 0 50px 0;
+  border: 1px solid rgb(236, 234, 234);
+
+  .tabs{
+
+    li{
+      float:left;
+      text-align: center;
+      cursor: pointer;
+      width: 50%;
+      font-size: 18px;
+      padding: 10px 5px;
+      
+      border-right: 1px solid rgb(250, 249, 249);
+    }
+    &:after{
+      display: table;
+    clear: both;
+    content: '';
+    }
+  }
+  
+}
+.sdgActive{
+  background-color: #fff;
+  border-top: 3px solid #0086c6;
+      
+}
+.sdgInactive{
+  background-color: rgb(236, 234, 234);
+  
+      
+}
+.sdgDetailCont{
+  padding: 30px;
+
+  h4{
+    font-weight: bold;
+    margin: 20px 0;
+    
+    font-size: 14px;
+    color:  rgb(80, 79, 79);
+    text-align: left;
+  }
+
+  ul{
+
+    li{
+      list-style-type: disc;
+      margin-bottom: 10px;
+      margin-left: 13px;
+    }
+  }
+  p{
+    margin-bottom: 10px;
+    color:  rgb(80, 79, 79);
+    text-align: left;
+  }
+  b{
+    font-weight: bold;
+  }
+}
+
+.sdgCapp{
+  font-size: 20px;
+  padding: 2px 5px;
+  font-weight: bold;
+  color: rgb(77, 74, 74);
+  border-bottom: 3px solid rgb(84, 140, 243);
+}
+.sdgCrumbs{
+  width:100%;
+  padding: 0;
+  margin-top: 20px;
+
+  li{
+    float: left;
+    width: 99px;
+    height: 100px;
+    cursor: pointer;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+
+    &:hover{
+      transition: ease-in-out .3s;
+      transform: scale(1.3);
+      }
+  }
+  &:after{
+    display: table;
+    clear:both;
+    content: '';
+  }
+}
+
+
+@media (min-width: 750px) and (max-width:900px) {
+  
+  .sdgleft{
+    width: 100%;
+  }
+  .sdgright{
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 200px) and (max-width:750px) {
+  
+  .sdgleft{
+    width: 100%;
+  }
+  .sdgright{
+    width: 100%;
+  }
+  .sdgDetailTab{
+  .tabs{
+    font-size: 12px; 
+    li{
+      font-size: 12px; 
+    }
+}
+  }
+  .sdgStrip{
+    width: 100%;
+    height: 50px;
+  }
+}

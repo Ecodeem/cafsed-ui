@@ -1,0 +1,51 @@
+@charset "UTF-8";
+.str0 {stroke:black;stroke-width:6.83488}
+.fil8 {fill:none}
+.fil28 {fill:black}
+.fil9 {fill:#00A8EB}
+.fil4 {fill:#021B30}
+.fil18 {fill:#1698F5}
+.fil12 {fill:#22395A}
+.fil29 {fill:#299E33}
+.fil26 {fill:#2D7D3B}
+.fil2 {fill:#318DDE}
+.fil5 {fill:#33CC99}
+.fil17 {fill:#37B72F}
+.fil14 {fill:#3F85AB}
+.fil22 {fill:#648BC6}
+.fil11 {fill:#666666}
+
+.fil6 {fill:#A31C44}
+.fil21 {fill:#B99319}
+.fil13 {fill:#C4202E}
+.fil10 {fill:#D4005E}
+.fil23 {fill:#DADADA}
+.fil15 {fill:#DFE87E}
+.fil3 {fill:#E23429}
+.fil30 {fill:#E86A26}
+.fil24 {fill:#E8DF7E}
+.fil16 {fill:#EDEDED}
+.fil25 {fill:#F01355}
+.fil27 {fill:#F0A613}
+
+.fil20 {fill:#F670B7}
+.fil7 {fill:#F79924}
+.fil19 {fill:#FBBFED}
+
+.fil28 {fill:#F79924}
+.fil18 {fill:#FBBFED}
+.fil42 {fill:#3ac5a9}
+.fil45 {fill:#dfc220}
+.fil48 {fill:#587da7}
+.fil49 {fill:#25dac4}
+.fil41 {fill:#ff627d}
+.fil44 {fill:#25dac4}
+.fil47 {fill:#ff627d}
+
+
+.svgmap{
+    shape-rendering:geometricPrecision;
+    text-rendering:geometricPrecision;
+    image-rendering:optimizeQuality;
+     fill-rule:evenodd; clip-rule:evenodd
+}
